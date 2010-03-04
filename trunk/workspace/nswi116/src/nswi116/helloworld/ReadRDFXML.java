@@ -7,7 +7,7 @@ import java.io.*;
 
 public class ReadRDFXML {
 	// note that this path is specific
-	static final String inputFileName  = "D:\\SemanticWeb\\Jena-2.6.2\\doc\\tutorial\\RDF_API\\data\\vc-db-1.rdf";
+	static final String inputFileName  = "data\\vc-db-1.rdf";
 	                          
 	public static void main (String args[]) {
 	    // create an empty model
