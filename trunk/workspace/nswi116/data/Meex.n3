@@ -1,0 +1,34 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix meex: <http://swa.cefriel.it/meex#> .
+meex:Performer	a  owl:Class ;
+                	rdfs:label  "Performer" .
+meex:fromCountry	a owl:DatatypeProperty ;
+	             rdfs:domain meex:Performer ;
+	             rdfs:range 
+ 				<http://www.w3.org/2001/XMLSchema#string> .
+meex:relatedPerformer  a  owl:ObjectProperty ;
+                       rdfs:domain  meex:Performer ;
+                       rdfs:range   meex:Performer .
+
+
+
+meex:Style  a  owl:Class .
+	          rdfs:label  "Music Style" .
+meex:performsStyle  a  owl:ObjectProperty ;
+                       rdfs:domain  meex:Performer ;
+                       rdfs:range   meex:Style .
+
+
+meex:Event  a  owl:Class ;
+            rdfs:label  "Event" .
+meex:performsEvent  a  owl:ObjectProperty ;
+	                  rdfs:domain  meex:Performer ;
+	                  rdfs:range   meex:Event .
+meex:hasWhen  a  owl:ObjectProperty ;
+	            rdfs:domain  meex:Event ;
+	            rdfs:range   gd:When .
+meex:hasWhere  a  owl:ObjectProperty ;
+               rdfs:domain  meex:Event ;
+               rdfs:range   gd:Where 
