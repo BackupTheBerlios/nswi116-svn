@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-shema> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix mb: <http://musicbrainz.org/> .
+
+mb:Artist a owl:Class ;
+          rdfs:label "MusicBrainz Artist and Band" .
+
+mb:artist_relation a owl:ObjectProperty ;
+                   rdfs:domain mb:Artist ;
+                   rdfs:range mb:Artist .
+
+mb:Track a owl:Class;
+         rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string";
+
+
