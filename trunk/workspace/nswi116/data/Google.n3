@@ -1,0 +1,32 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix meex: <http://swa.cefriel.it/meex#> .
+@prefix gd: <http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#> .
+
+gd:When a owl:Class;
+	rdfs:label "Time" .
+gd:startTime a owl:DatatypeProperty ;
+	rdfs:domain gd:When ;
+	rdfs:range
+		<http://www.w3.org/2001/XMLSchema#string> .
+gd:endTime a owl:DatatypeProperty ;
+	rdfs:domain gd:When ;
+	rdfs:range
+		<http://www.w3.org/2001/XMLSchema#string> .
+gd:Where a owl:Class; rdfs:label "Location" .
+gd:postalAddress a owl:DatatypeProperty ;
+	rdfs:domain gd:Where ;
+	rdfs:range
+		<http://www.w3.org/2001/XMLSchema#string>.
+gd:hasGeoPt a owl:ObjectProperty ;
+	rdfs:domain gd:Where ;
+	rdfs:range gd:GeoPt .
+gd:GeoPt a owl:Class ; rdfs:label "Geo-referenced Point" .
+gd:lat a owl:DatatypeProperty ;
+	rdfs:domain gd:GeoPt ;
+	rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+gd:lon a owl:DatatypeProperty ;
+	rdfs:domain gd:GeoPt ;
+	rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+gd:label rdfs:subPropertyOf rdfs:label .
