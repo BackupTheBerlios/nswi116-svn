@@ -1,0 +1,7 @@
+mb:artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html
+      mm:from "England" ;
+      mm:hasStyle mm:style/British-Invasion ,
+                  mm:style/Rock ,
+                  mm:style/Skiffle .
+mm:style/British-Invasion  a  mm:Style ;
+      rdfs:label  "British Invasion" .

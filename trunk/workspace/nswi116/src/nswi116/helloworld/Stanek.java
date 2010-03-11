@@ -1,9 +1,0 @@
-package nswi116.helloworld;
-
-public class Stanek {
-	public static void main(String[] args)
-	{
-		System.out.println("Hello world!");
-
-	}
-}
