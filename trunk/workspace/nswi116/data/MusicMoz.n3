@@ -1,0 +1,12 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix mm:      <http://musicmoz.org/> .
+@prefix mb:      <http://musicbrainz.org/> .
+mm:from  a  owl:DatatypeProperty ;
+         rdfs:domain  mb:Artist ;
+         rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+mm:Style  a owl:Class ;
+          rdfs:label  "MusicMoz Music Style" .
+mm:hasStyle  a  owl:ObjectProperty ;
+             rdfs:domain  mb:Artist ;
+             rdfs:range   mm:Style .
