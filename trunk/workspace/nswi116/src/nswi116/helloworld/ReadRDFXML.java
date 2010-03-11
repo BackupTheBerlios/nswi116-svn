@@ -13,13 +13,15 @@ public class ReadRDFXML {
 	    // create an empty model
 	    Model model = ModelFactory.createDefaultModel();
 	
-	    InputStream in = FileManager.get().open( inputFileName );
-	    if (in == null) {
-	        throw new IllegalArgumentException( "File: " + inputFileName + " not found");
-	    }
 	    
-	    // read the RDF/XML file
-	    model.read(in, "");
+	    String prefix = "file:///D:/nswi116/workspace/nswi116/data/";
+	    
+	    model.read(prefix + "Meex.n3", "", "N3");
+	    model.read("Google.n3", "", "N3");
+	    model.read("MeexBindings.n3", "", "N3");
+	    model.read("MusicBrainz.n3", "", "N3");
+	    model.read("MusicMoz.n3", "", "N3");
+	    model.read("EVDB.n3", "", "N3");
 	                
 	    // write it to standard out
 	    model.write(System.out);            
