@@ -1,0 +1,14 @@
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix evdb:    <http://eventful.com/> .
+@prefix gd:       <http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#> .
+
+evdb:Event a owl:Class ;
+	rdfs:label "Eventful Event" .
+evdb:hasWhen a owl:ObjectProperty ;
+	rdfs:domain evdb:Event ;
+	rdfs:range   gd:When .
+evdb:hasWhere a owl:ObjectProperty ;
+	rdfs:domain evdb:Event ;
+	rdfs:range   gd:Where .
+
