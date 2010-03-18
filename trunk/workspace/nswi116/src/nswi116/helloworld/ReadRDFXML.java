@@ -1,6 +1,8 @@
 package nswi116.helloworld;
 
 import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.reasoner.Reasoner;
+import com.hp.hpl.jena.reasoner.ReasonerRegistry;
 import com.hp.hpl.jena.util.FileManager;
 
 import java.io.*;
@@ -30,6 +32,13 @@ public class ReadRDFXML {
 	    model.read(prefix + "EVDB.n3", "", "N3");
 	                
 	    // write it to standard out
-	    model.write(System.out);            
+	    model.write(new FileOutputStream("old_model.xml"));
+	    System.err.println("old_model");
+	    
+	    Reasoner reasoner = ReasonerRegistry.getOWLMicroReasoner();
+	    Model model2 = ModelFactory.createInfModel(reasoner, model);
+	    model2.write(new FileOutputStream("inf_model.xml"));
+	    System.err.println("inf_model");
+
 	}
 }
