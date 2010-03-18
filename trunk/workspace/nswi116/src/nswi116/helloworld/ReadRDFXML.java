@@ -1,9 +1,14 @@
 package nswi116.helloworld;
 
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.reasoner.ReasonerRegistry;
-import com.hp.hpl.jena.util.FileManager;
 
 import java.io.*;
 
@@ -39,6 +44,33 @@ public class ReadRDFXML {
 	    Model model2 = ModelFactory.createInfModel(reasoner, model);
 	    model2.write(new FileOutputStream("inf_model.xml"));
 	    System.err.println("inf_model");
+	    
+	    
+	    String sparqlQueryStringPerformer =
+	        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+	  		+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
+	  		+ "SELECT DISTINCT ?performer \n"
+	  		+ "WHERE { ?performer a meex:Performer. }";
+	  		
+	    
+	    String sparqlQueryString = 
+		    "PREFIX meex: <http://swa.cefriel.it/meex#>\n" +
+	    	"PREFIX mb: <http://musicbrainz.org/>\n"
+	    	+ "DESCRIBE <mb:artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html>";
+	    
+	    
+	    Query query = QueryFactory.create(sparqlQueryStringPerformer);
+	    
+	    QueryExecution qexec = QueryExecutionFactory.create(query, model2);
+//	    Model resultModel = qexec.execDescribe();
+	    ResultSet resultModel = qexec.execSelect();
+	    
+	    while (resultModel.hasNext())
+	    {
+	    	QuerySolution sol = resultModel.next();
+	    	
+	    	System.out.println(sol.toString());	    	
+	    }
 
 	}
 }
