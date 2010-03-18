@@ -69,7 +69,7 @@ public class ReadRDFXML {
 	    {
 	    	QuerySolution sol = resultModel.next();
 	    	
-	    	System.out.println(sol.toString());	    	
+	    	System.out.println(sol.getResource("?performer"));	    	
 	    }
 
 	}
