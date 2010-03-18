@@ -57,20 +57,23 @@ public class ReadRDFXML {
 		    "PREFIX meex: <http://swa.cefriel.it/meex#>\n" +
 	    	"PREFIX mb: <http://musicbrainz.org/>\n"
 	    	+ "DESCRIBE <mb:artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html>";
-	    
-	    
-	    Query query = QueryFactory.create(sparqlQueryStringPerformer);
-	    
+/*	    
+	    Query query = QueryFactory.create(sparqlQueryString);
 	    QueryExecution qexec = QueryExecutionFactory.create(query, model2);
-//	    Model resultModel = qexec.execDescribe();
-	    ResultSet resultModel = qexec.execSelect();
+	    Model resultModel = qexec.execDescribe();
+		resultModel.write(System.out);
+/**/		
+	    Query query = QueryFactory.create(sparqlQueryStringPerformer);	    
+	    QueryExecution qexec = QueryExecutionFactory.create(query, model2);	    
+	    ResultSet resultSet = qexec.execSelect();
 	    
-	    while (resultModel.hasNext())
+	    while (resultSet.hasNext())
 	    {
-	    	QuerySolution sol = resultModel.next();
+	    	QuerySolution sol = resultSet.next();
 	    	
 	    	System.out.println(sol.getResource("?performer"));	    	
 	    }
+/**/	    
 
 	}
 }
