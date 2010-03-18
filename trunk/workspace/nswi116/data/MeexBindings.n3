@@ -1,0 +1,17 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix meex: <http://swa.cefriel.it/meex#> .
+@prefix gd: <http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#> .
+@prefix mb: <http://musicbrainz.org/> .
+@prefix mm:      <http://musicmoz.org/> .
+@prefix evdb:    <http://eventful.com/> .
+
+mb:Artist rdfs:subClassOf meex:Performer .
+mb:related_artist rdfs:subPropertyOf meex:relatedPerformer.
+mm:Style rdfs:subClassOf meex:Style .
+mm:hasStyle rdfs:subPropertyOf meex:performsStyle .
+mm:from rdfs:subPropertyOf meex:fromCountry .
+evdb:Event rdfs:subClassOf meex:Event.
+evdb:hasWhen rdfs:subPropertyOf meex:hasWhen.
+evdb:hasWhere rdfs:subPropertyOf meex:hasWhere.
