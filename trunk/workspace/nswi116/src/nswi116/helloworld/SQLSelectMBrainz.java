@@ -18,9 +18,15 @@ public class SQLSelectMBrainz {
 
 		
 		String query_str = 
-			"SELECT artist2.name, artist2.gid FROM artist as artist1, artist as artist2, artist_relation WHERE " +
-			"artist1.name='The Beatles' AND " +
-			"artist_relation.artist = artist1.id AND " +
+			"SELECT " +
+			"artist2.name, artist2.gid " +
+			"FROM " +
+			"artist as artist1, artist as artist2, artist_relation " +
+			"WHERE " +
+			"artist1.name='The Beatles' " +
+			"AND " +
+			"artist_relation.artist = artist1.id " +
+			"AND " +
 			"artist_relation.ref = artist2.id";
 		
 		String url = "jdbc:mysql://dedekj.heliohost.org/dedekj_musicbrainz";
@@ -34,6 +40,8 @@ public class SQLSelectMBrainz {
 			System.out.print(" - ");
 			System.out.println(result.getString(2));
 		}
+		
+		result.close();	stmt.close(); con.close();
 
 	}
 
