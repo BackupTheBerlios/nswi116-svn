@@ -5,9 +5,9 @@
 @prefix mb: <http://musicbrainz.org/> .
 map:database a d2rq:Database;
   d2rq:jdbcDriver "org.postgresql.Driver";
-  d2rq:jdbcDSN "jdbc:postgresql://localhost:5432/MusicBrainzDB";
-  d2rq:username "postgres";
-  d2rq:password "sw-book".
+  d2rq:jdbcDSN "jdbc:mysql://dedekj.heliohost.org/dedekj_musicbrainz";
+  d2rq:username "dedekj_student";
+  d2rq:password "nswi116".
 map:artist a d2rq:ClassMap;
   d2rq:dataStorage map:database;
   d2rq:class mb:Artist;
