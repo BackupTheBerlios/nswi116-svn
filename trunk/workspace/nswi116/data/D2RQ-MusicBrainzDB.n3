@@ -19,6 +19,6 @@ map:artist_name a d2rq:PropertyBridge;
 map:artist_relation a d2rq:PropertyBridge;
  d2rq:belongsToClassMap map:artist;
  d2rq:property mb:artist_relation;
- d2rq:join "artist.id = artist_relation.artist“;
+ d2rq:join "artist.id = artist_relation.artist";
  d2rq:join "artist_relation.ref = artist2.id";
  d2rq:uriPattern "http://musicbrainz.org/artist/@@artist2.gid@@.html".
