@@ -1,0 +1,24 @@
+@prefix map: <http://swa.cefriel.it/meex/D2RQ-MusicBrainz.n3#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix mb: <http://musicbrainz.org/> .
+map:database a d2rq:Database;
+  d2rq:jdbcDriver "org.postgresql.Driver";
+  d2rq:jdbcDSN "jdbc:postgresql://localhost:5432/MusicBrainzDB";
+  d2rq:username "postgres";
+  d2rq:password "sw-book".
+map:artist a d2rq:ClassMap;
+  d2rq:dataStorage map:database;
+  d2rq:class mb:Artist;
+  d2rq:uriPattern "http://musicbrainz.org/artist/@@artist.gid@@.html";
+map:artist_name a d2rq:PropertyBridge;
+  d2rq:belongsToClassMap map:artist;
+  d2rq:property rdfs:label;
+  d2rq:column "artist.name".
+map:artist_relation a d2rq:PropertyBridge;
+ d2rq:belongsToClassMap map:artist;
+ d2rq:property mb:artist_relation;
+ d2rq:join "artist.id = artist_relation.artist“;
+ d2rq:join "artist_relation.ref = artist2.id";
+ d2rq:uriPattern "http://musicbrainz.org/artist/@@artist2.gid@@.html".

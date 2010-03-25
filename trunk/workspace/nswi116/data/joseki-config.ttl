@@ -1,0 +1,12 @@
+[]  rdf:type            joseki:Service ;
+    rdfs:label          "SPARQL for MusicBrainzDB" ;
+    joseki:serviceRef   "MusicBrainz" ;
+    joseki:dataset      _:MusicBrainzDS ;
+    joseki:processor    joseki:ProcessorSPARQL_FixedDS .
+_:MusicBrainzDS rdf:type ja:RDFDataset ;
+    ja:defaultGraph _:MusicBrainzModel ;
+    rdfs:label "MusicBrainz Dataset" .
+_:MusicBrainzModel rdf:type d2rq:D2RQModel ;
+    rdfs:label "MusicBrainz D2RQ Model" ;
+    d2rq:mappingFile <file:D2RQ-MusicBrainzDB.n3> ;
+    d2rq:resourceBaseURI <http://musicbrainz.org/> .
