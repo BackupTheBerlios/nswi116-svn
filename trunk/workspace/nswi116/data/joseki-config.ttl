@@ -8,6 +8,9 @@
 @prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
 @prefix mb: <http://musicbrainz.org/> .
 
+<> ja:imports d2rq: .
+
+
 []  rdf:type joseki:Server ;
     .
 
@@ -23,3 +26,14 @@ _:MusicBrainzModel rdf:type d2rq:D2RQModel ;
     rdfs:label "MusicBrainz D2RQ Model" ;
     d2rq:mappingFile <file:D2RQ-MusicBrainzDB.n3> ;
     d2rq:resourceBaseURI <http://musicbrainz.org/> .
+    
+    
+joseki:ProcessorSPARQL_FixedDS
+    rdf:type joseki:Processor ;
+    module:implementation joseki:ImplSPARQL .
+
+joseki:ImplSPARQL
+    rdf:type   joseki:ServiceImpl ;
+    module:className
+        <java:org.joseki.processors.SPARQL> .
+    
