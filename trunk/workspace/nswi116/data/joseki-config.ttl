@@ -16,7 +16,7 @@
 
 []  rdf:type            joseki:Service ;
     rdfs:label          "SPARQL for MusicBrainzDB" ;
-    joseki:serviceRef   "MusicBrainz" ;
+    joseki:serviceRef   "service/MusicBrainz" ;
     joseki:dataset      _:MusicBrainzDS ;
     joseki:processor    joseki:ProcessorSPARQL_FixedDS .
 _:MusicBrainzDS rdf:type ja:RDFDataset ;
@@ -36,4 +36,7 @@ joseki:ImplSPARQL
     rdf:type   joseki:ServiceImpl ;
     module:className
         <java:org.joseki.processors.SPARQL> .
+        
+        
+#http://localhost:2020/service/MusicBrainz?query=PREFIX+mb%3A+%3Chttp%3A%2F%2Fmusicbrainz.org%2F%3E%0D%0ADESCRIBE+%3Chttp%3A%2F%2Fmusicbrainz.org%2Fartist%2F76c9a186-75bd-436a-85c0-823e3efddb7f.html%3E        
     
