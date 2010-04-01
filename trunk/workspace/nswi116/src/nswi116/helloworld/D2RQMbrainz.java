@@ -16,23 +16,35 @@ public class D2RQMbrainz {
 	{
 		// Set up the ModelD2RQ using a mapping file
 		Model m = new ModelD2RQ("file:data/D2RQ-MusicBrainzDB.n3");
-		
+/*		
 	    String sparqlQueryString = 
 	    	"DESCRIBE <http://musicbrainz.org/artist/835a6d9c-fea0-4a71-ae52-9c4da946433a.html>";
-	    	//+ "DESCRIBE <mb:artist/a35237a0-4f47-40a6-b6f3-1e786db23402.html>";
-	    
-	    
-/*	    
-	    Query query = QueryFactory.create(sparqlQueryString);
-	    QueryExecution qexec = QueryExecutionFactory.create(query, model2);
-	    Model resultModel = qexec.execDescribe();
-		resultModel.write(System.out);
-/**/		
+	    	    
 	    Query query = QueryFactory.create(sparqlQueryString);	    
 	    QueryExecution qexec = QueryExecutionFactory.create(query, m);	    
 	    Model resultSet = qexec.execDescribe();
 	    
 	    resultSet.write(System.out);
+	    
+/***/	    
+	    String sparqlQueryStringPerformer =
+	        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+	  		+ "prefix mb: <http://musicbrainz.org/>\n"
+	  		+ "SELECT DISTINCT ?performer \n"
+	  		+ "WHERE { ?performer a mb:Artist. ?performer rdfs:label 'The Beatles'. }";
+
+
+	    Query query = QueryFactory.create(sparqlQueryStringPerformer);
+	    QueryExecution qexec = QueryExecutionFactory.create(query, m);
+	    ResultSet resultSet = qexec.execSelect();
+
+	    while (resultSet.hasNext())
+	    {
+	    	QuerySolution sol = resultSet.next();
+
+	    	System.out.println(sol.getResource("?performer"));
+	    }
+/***/
 	    
 
 	}
