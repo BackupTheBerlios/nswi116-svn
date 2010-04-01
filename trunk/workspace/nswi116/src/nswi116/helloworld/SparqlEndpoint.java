@@ -12,7 +12,8 @@ public class SparqlEndpoint {
 	public static void printHallo(PrintWriter out)
 	{
 		String artist = "http://musicbrainz.org/artist/76c9a186-75bd-436a-85c0-823e3efddb7f.html";
-		String sparqlQueryString = //"PREFIX mb: <http://musicbrainz.org/>\n" +
+		//String artist = "mb:artist/76c9a186-75bd-436a-85c0-823e3efddb7f.html";
+		String sparqlQueryString = "PREFIX mb: <http://musicbrainz.org/>\n" +
            "DESCRIBE <" + artist + ">";
 		Query query = QueryFactory.create(sparqlQueryString);
 		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:2020/service/MusicBrainz", query);
