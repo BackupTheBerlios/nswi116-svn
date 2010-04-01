@@ -18,9 +18,7 @@ public class D2RQMbrainz {
 		Model m = new ModelD2RQ("file:data/D2RQ-MusicBrainzDB.n3");
 		
 	    String sparqlQueryString = 
-		    "PREFIX meex: <http://swa.cefriel.it/meex#>\n" +
-	    	"PREFIX mbr: <http://musicbrainz.org/>\n"
-	    	+ "DESCRIBE <mbr:artist/835a6d9c-fea0-4a71-ae52-9c4da946433a.html>";
+	    	"DESCRIBE <http://musicbrainz.org/artist/835a6d9c-fea0-4a71-ae52-9c4da946433a.html>";
 	    	//+ "DESCRIBE <mb:artist/a35237a0-4f47-40a6-b6f3-1e786db23402.html>";
 	    
 	    
