@@ -11,8 +11,8 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:ex="http://example.org/stuff/1.0/">
-</rdf:RDF>
  <xsl:apply-templates/>         
+</rdf:RDF>
 </xsl:template>
 
 	
