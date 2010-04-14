@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import nswi116.helloworld.SQLSelectMBrainz;
 
+// how to run: org.mortbay.jetty.Main 80 -webapp webapps/nswi116
+// how to access: http://localhost/nswi116/
 public class HalloWorld extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
