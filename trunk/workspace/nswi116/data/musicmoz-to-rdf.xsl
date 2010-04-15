@@ -15,6 +15,18 @@
 </rdf:RDF>
 </xsl:template>
 
+<xsl:template match="musicmoz/category[(@type='band' or @type='artist') and resource/@name='musicbrainz']">
+	<xsl:variable name="artist_uri" select="resource[@name='musicbrainz']/@link"/>
+	<xsl:for-each select="style">
+		<xsl:variable name="style_reformatted" select="concat('http://musicmoz.org/style/',text())"/>
+		<rdf:Description rdf:about="{$artist_uri}">
+			<mm:hasStyle rdf:resource="{$style_reformatted}"/>
+		</rdf:Description>
+	</xsl:for-each>
+	<rdf:Description rdf:about="{$artist_uri}">
+		<mm:from><xsl:value-of select="from"/></mm:from>
+	</rdf:Description>
+</xsl:template>
 	
 <xsl:template match="musicmoz/style">
  <xsl:variable name="style_reformatted" select="concat('http://musicmoz.org/style/', name)"/>
