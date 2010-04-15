@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (C) 2001-2003 MusicMoz (MusicMoz.org) -->
+<!-- Produced: Fri Jan 22 12:19:17 2010 GMT -->
+<!-- For license see: http://musicmoz.org/xml/license.html -->
+
+<musicmoz
+ xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+ grddl:transformation="file:data/musicmoz-to-rdf.xsl">
+
+<category name="Bands_and_Artists/D/Delirious" canapply="1" cansubmit="1" type="band">
+   <summary>Christian Rock band from Littlehampton, UK. Formed in 1992, the band has had a number of UK chart hits, including Deeper, See The Star, and It's OK.</summary>
+   <searchterm value="Delirious?" />
+   <searchterm value="Deliriou5?" />
+   <searchterm value="Deliriou5" />
+   <resource name="dmoz" link="http://dmoz.org/Society/Religion_and_Spirituality/Christianity/Music/Styles/Rock/Bands_and_Artists/D/Delirious/" />
+   <resource name="wikipedia" link="http://en.wikipedia.org/wiki/Delirious" />
+   <resource name="amg" link="http://allmusic.com/cg/amg.dll?p=amg&amp;sql=B83jyea124x07" />
+   <resource name="yahoolaunch" link="http://launch.yahoo.com/artist/default.asp?artistID=1032324" />
+   <resource name="musicbrainz" link="http://musicbrainz.org/artist/2393e891-c63c-4654-b7a9-c5fb9dc0c8a0.html" />
+   <resource name="artistdirect" link="http://artistdirect.com/music/artist/card/0,,647089,00.html" />
+   <resource name="vh1" link="http://www.vh1.com/artists/az/delirious_/artist.jhtml" />
+   <resource name="rollingstone" link="http://rollingstone.com/artists/default.asp?oid=9437" />
+   <subcat name="Articles" items="3" />
+   <subcat name="Discography" items="61" />
+   <subcat name="Links" items="23" />
+   <subcat name="Online_Releases" items="7" />
+   <subcat name="Timeline" items="35" />
+   <subcat name="Videos" items="3" />
+   <newsgroup name="alt.music.delirious" />
+   <editor name="rpfuller" />
+   <name>Delirious?</name>
+   <from>England</from>
+   <style number="1">Christian Rock</style>
+   <founded>1992</founded>
+   <disbanded>2009</disbanded>
+   <foundedas>Cutting Edge Band</foundedas>
+   <logo src="/img/editors/rpfuller/takemeaway.jpg" width="150" height="130" />
+   <member name="Martin Smith" role="Vocals, high strung, and electrics" />
+   <member name="Jon Thatcher" role="Bass" />
+   <member name="Tim Jupp" role="Keyboards, hammond organ, and accordion" />
+   <member name="Stuart Garrard" role="Electric guitars, slide, e-bow, and vocals" />
+   <member name="Paul Evans" role="Drums and percussion" />
+   <pastmember name="Stewart Smith" role="Drums and percussion" />
+
+   <release type="album" name="World Service" date="2003 UK/2004 US" ref="Bands_and_Artists/D/Delirious/Discography/World_Service" />
+   <release type="album" name="Cutting Edge 1 &amp; 2" date="1993/1994 UK" ref="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_1_%26_2" />
+   <release type="album" name="Deeper: The d:finitive Worship Experience" date="2001 US/2002 UK" ref="Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience" />
+   <release type="album" name="Now is the Time: Live at Willow Creek" date="2006" />
+   <release type="album" name="Live and in the Can" date="1996 UK/1998 US" ref="Bands_and_Artists/D/Delirious/Discography/Live_and_in_the_Can" />
+   <release type="album" name="Glo" date="2000 UK/US" ref="Bands_and_Artists/D/Delirious/Discography/Glo" links="7" />
+   <release type="album" name="d:Tour Live" date="1998 UK" ref="Bands_and_Artists/D/Delirious/Discography/dTour_Live" />
+   <release type="album" name="Kingdom of Comfort" date="2008" />
+   <release type="album" name="Libertad" date="2002 UK/2003 N. America" ref="Bands_and_Artists/D/Delirious/Discography/Libertad" />
+   <release type="album" name="Touch" date="2002, Nov" ref="Bands_and_Artists/D/Delirious/Discography/Touch" />
+   <release type="album" name="Audio Lessonover?" date="2001 UK" ref="Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover%3F" links="1" />
+   <release type="album" name="King of Fools" date="1997 UK/1998 US" ref="Bands_and_Artists/D/Delirious/Discography/King_of_Fools" links="2" />
+   <release type="album" name="Access:D" date="2002, Nov UK" ref="Bands_and_Artists/D/Delirious/Discography/AccessD" />
+   <release type="album" name="Cutting Edge" date="1998 US" ref="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge" links="4" />
+   <release type="album" name="My Soul Sings: Live from Bogota, Colombia" date="2009.03" />
+   <release type="album" name="Mezzamorphis" date="1999 UK/US" ref="Bands_and_Artists/D/Delirious/Discography/Mezzamorphis" links="12" />
+   <release type="album" name="History Makers: Greatest Hits" date="2009.11" />
+   <release type="album" name="Cutting Edge 3 &amp; 4" date="1995 UK" ref="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_3_%26_4" />
+   <release type="album" name="The Mission Bell" date="2005" ref="Bands_and_Artists/D/Delirious/Discography/Mission_Bell,_The" />
+
+   <release type="single" name="DeEPer EP" date="1997, Nov UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/DeEPer_EP" />
+   <release type="single" name="See the Star" date="1999, Mar UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/See_the_Star" />
+   <release type="single" name="White Ribbon Day" date="1997, Feb UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/White_Ribbon_Day" />
+   <release type="single" name="Deeper" date="1997, May UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/Deeper" />
+   <release type="single" name="Promise" date="1997, Jul UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/Promise" />
+   <release type="single" name="I Could Sing of Your Love Forever" date="2001, Dec UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/I_Could_Sing_of_Your_Love_Forever" />
+   <release type="single" name="It's O.K." date="2000, Feb UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/It's_O.K." />
+   <release type="single" name="Waiting for the Summer" date="2001, Jun UK" ref="Bands_and_Artists/D/Delirious/Discography/Singles/Waiting_for_the_Summer" />
+
+   <release type="video" name="A View from the Terraces" date="1998.04.01" ref="Bands_and_Artists/D/Delirious/Videos/View_from_the_Terraces,_A" />
+   <release type="video" name="Pro-mod:e" date="2000.12.04" ref="Bands_and_Artists/D/Delirious/Videos/Pro-mode" />
+   <release type="video" name="My Soul Sings: Live from Bogota, Colombia" date="2009, DVD" />
+   <release type="video" name="Now is the Time: Live At Willow Creek" date="2006, DVD" />
+   <release type="video" name="Archive:d" date="2003.05.23" ref="Bands_and_Artists/D/Delirious/Videos/Archived" />
+
+   <release type="onlinerelease" name="America" date="2001" ref="Bands_and_Artists/D/Delirious/Online_Releases/America" />
+   <release type="onlinerelease" name="Majesty [Here I am]" date="2003.10" ref="Bands_and_Artists/D/Delirious/Online_Releases/Majesty_%5BHere_I_am%5D" />
+   <release type="onlinerelease" name="Rain Down" date="2003.11" ref="Bands_and_Artists/D/Delirious/Online_Releases/Rain_Down" />
+   <release type="onlinerelease" name="Take me Away" date="2001" ref="Bands_and_Artists/D/Delirious/Online_Releases/Take_me_Away" />
+   <release type="onlinerelease" name="White Ribbon Day" date="2001" ref="Bands_and_Artists/D/Delirious/Online_Releases/White_Ribbon_Day" />
+   <release type="onlinerelease" name="Deeper" date="2002" ref="Bands_and_Artists/D/Delirious/Online_Releases/Deeper" />
+   <release type="onlinerelease" name="I Could Sing of Your Love Forever" date="2002" ref="Bands_and_Artists/D/Delirious/Online_Releases/I_Could_Sing_of_Your_Love_Forever" />
+
+   <appearance type="compilation" name="Whatever it Takes" date="2000, November" ref="Releases/Compilations/W/Whatever_it_Takes" />
+   <appearance type="compilation" name="Christian Music Network - Autumn 2002" date="2002" ref="Releases/Compilations/C/Christian_Music_Network_-_Autumn_2002" />
+   <appearance type="compilation" name="Listen: Louder" date="1999, October" ref="Releases/Compilations/L/Listen_Louder" />
+   <appearance type="compilation" name="Christian Music Network - Winter 2002" date="2002" ref="Releases/Compilations/C/Christian_Music_Network_-_Winter_2002" />
+   <appearance type="compilation" name="WOW Gold" date="2000, June" ref="Releases/Compilations/W/WOW_Gold" />
+   <appearance type="compilation" name="WOW 1999" date="1998, October" ref="Releases/Compilations/W/WOW_1999" />
+   <appearance type="compilation" name="Streams" date="1999" ref="Releases/Compilations/S/Streams" />
+   <appearance type="compilation" name="Revival Generation: 12 Songs That Rocked the Nation" date="1998, August" ref="Releases/Compilations/R/Revival_Generation_12_Songs_That_Rocked_the_Nation" />
+   <appearance type="compilation" name="Reloaded" date="2000, April" ref="Releases/Compilations/R/Reloaded" />
+   <appearance type="compilation" name="Revival Generation: I Could Sing of Your Love Forever" date="1999" ref="Releases/Compilations/R/Revival_Generation_I_Could_Sing_of_Your_Love_Forever" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Articles" canapply="1" cansubmit="1">
+   <subcat name="Links" items="3" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Articles/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208042-1006201460" type="url">
+      <url>http://news.bbc.co.uk/hi/english/entertainment/music/newsid_1362000/1362835.stm</url>
+      <title>BBC News - My Music: Delirious</title>
+      <desc>Interview with Martin and Tim, about their tastes in music.</desc>
+      <date>2001.05.31</date>
+   </item>
+   <item id="208040-1006201460" type="url">
+      <url>http://www.ccmmagazine.com/archives/fullstory.asp?ID=244</url>
+      <title>CCM Magazine - Fab Five</title>
+      <desc>Feature article, by Lou Carlozo.</desc>
+      <date>1999.07.01</date>
+   </item>
+   <item id="208038-1006201460" type="url">
+      <url>http://www.realmagazine.com/new/articles/delirious.html</url>
+      <title>Delirious?: The British Inversion</title>
+      <desc>Article looking at Christian music and how Delirious? fits into that, along with photographs.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography" canapply="1" cansubmit="1">
+   <subcat name="AccessD" items="1" />
+   <subcat name="Audio_Lessonover?" items="2" />
+   <subcat name="Cutting_Edge" items="5" />
+   <subcat name="Cutting_Edge_1_&amp;_2" items="1" />
+   <subcat name="Cutting_Edge_3_&amp;_4" items="1" />
+   <subcat name="Deeper_The_dfinitive_Worship_Experience" items="2" />
+   <subcat name="Glo" items="9" />
+   <subcat name="King_of_Fools" items="4" />
+   <subcat name="Libertad" items="2" />
+   <subcat name="Live_and_in_the_Can" items="2" />
+   <subcat name="Mezzamorphis" items="14" />
+   <subcat name="Mission_Bell,_The" items="1" />
+   <subcat name="Singles" priority="2" items="13" />
+   <subcat name="Touch" items="2" />
+   <subcat name="World_Service" items="1" />
+   <subcat name="dTour_Live" items="1" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/AccessD" canapply="1" cansubmit="1">
+   <item id="534-1042823340" type="release">
+      <title>Access:D (Live Worship in the Key of D:)</title>
+      <genre>Christian Rock/Worship</genre>
+      <releasedate>2002.11.30</releasedate>
+      <formats>CD</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>LIVECD3</cataloguenumber>
+      <tracklisting>   <disc number="1">
+         <track number="1" title="Access:D Part 01 (Touch)" />
+         <track number="2" title="Deeper" />
+         <track number="3" title="God's Romance" />
+         <track number="4" title="My Glorious" />
+         <track number="5" title="Access:D Part 02 (Blindfold)" />
+         <track number="6" title="Love is the Compass" />
+         <track number="7" title="Touch" />
+         <track number="8" title="Access:D Part 03 (Rain Down)" />
+         <track number="9" title="Follow" />
+         <track number="10" title="Happy Song" />
+         <track number="11" title="Heaven" />
+         <track number="12" title="History Maker" />
+         </disc>
+         <disc number="2">
+         <track number="13" title="Bliss" />
+         <track number="14" title="Show me Heaven" />
+         <track number="15" title="Sanctify" />
+         <track number="16" title="I Could Sing of Your Love Forever" />
+         <track number="17" title="Take me Away" />
+         <track number="18" title="Fire" />
+         <track number="19" title="Everything" />
+         <track number="20" title="King of Fools" />
+         <track number="21" title="Jesus Blood" />
+         <track number="22" title="Hang on to You" />
+         <track number="23" title="Access:D Part 4 ('If we'd ask')" />
+         <track number="24" title="Access:D Part 5 (Dance in the River)" />
+         <track number="25" title="Access:D Part 6 (Lord you have my Heart)" />
+         <track number="26" title="Investigate" />
+         </disc>
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious-accessd.gif" width="100" height="94" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover?" canapply="1" cansubmit="1">
+   <subcat name="Links" items="1" />
+   <relcat cat="Bands_and_Artists/D/Delirious/Discography/Touch" />
+   <item id="13721-1006471490" type="release">
+      <title>Audio Lessonover?</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.08.06</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD4</cataloguenumber>
+      <description>Two of the songs from this album, &quot;Take me Away&quot; and &quot;America&quot; are available for &lt;a href=&quot;http://artists.mp3s.com/artists/284/delirious1.html&quot;&gt;free download from mp3.com&lt;/a&gt;.&lt;p&gt;Waiting for the Summer was released as a &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/Waiting_for_the_Summer/&quot;&gt;single&lt;/a&gt;, and reached number 26 in the UK charts. (June 10th 2001)</description>
+      <tracklisting>   <track number="1" title="Waiting for the Summer" />
+         <track number="2" title="Take me Away" />
+         <track number="3" title="Love is the Compass" />
+         <track number="4" title="Alien" />
+         <track number="5" title="Angel in Disguise" />
+         <track number="6" title="Rollercoaster" />
+         <track number="7" title="Fire" />
+         <track number="8" title="There is an Angel" />
+         <track number="9" title="Bicycle Gasoline" />
+         <track number="10" title="A Little Love" />
+         <track number="11" title="Show me Heaven" />
+         <track number="12" title="America" />
+         <track number="13" title="Stealing Time" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/audiolessonover.jpg" width="141" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover?/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208108-1006201460" type="url">
+      <url>http://www.delirious.org.uk/articles/reviews/doc44.html</url>
+      <title>Delirious? - Library (Review)</title>
+      <desc>Review and rating for each track on the album, together with an overall summary.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge" canapply="1" cansubmit="1">
+   <subcat name="Links" items="4" />
+   <item id="13821-1006545302" type="release">
+      <title>Cutting Edge</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1998</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <cataloguenumber>SPD1622</cataloguenumber>
+      <tracklisting>   <disc number="1">
+         <track number="1" title="Message Of The Cross" />
+         <track number="2" title="Singers Song" />
+         <track number="3" title="Lord You Have My Heart" />
+         <track number="4" title="What Is This Thing Called Love?" />
+         <track number="5" title="The Crucible For Silver" />
+         <track number="6" title="Thank You For Saving Me" />
+         <track number="7" title="The Happy Song" />
+         <track number="8" title="Prophet Song" />
+         <track number="9" title="King Of Love" />
+         <track number="10" title="Coming Back" />
+         <track number="11" title="Lead Me" />
+         <track number="12" title="I Could Sing Of Your Love Forever" />
+         <track number="13" title="Shout To The North" />
+         </disc>
+         <disc number="2">
+         <track number="14" title="Did You Feel The Mountains Tremble?" />
+         <track number="15" title="I've Found Jesus" />
+         <track number="16" title="Oh Lead Me" />
+         <track number="17" title="Shaken Up" />
+         <track number="18" title="I'm Not Ashamed" />
+         <track number="19" title="Find Me In The River" />
+         <track number="20" title="Louder Than The Radio" />
+         <track number="21" title="You Split The Earth" />
+         <track number="22" title="When All Around Has Fallen" />
+         <track number="23" title="All I Want Is You" />
+         <track number="24" title="I've Searched For Gold" />
+         <track number="25" title="Obsession" />
+         </disc>
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/cuttingedge-US.jpg" width="150" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208104-1006201460" type="url">
+      <url>http://www.paulfp.co.uk/delirious/articles/cuttingedge.html</url>
+      <title>Crosswalk.com Review of Cutting Edge</title>
+      <desc>Album review, by David Longenecker.</desc>
+      <date>1998.02.05</date>
+   </item>
+   <item id="208100-1006201460" type="url">
+      <url>http://www.t4jmusic.com/c_music/reviews/d/cutting_edge.htm</url>
+      <title>Cutting Edge</title>
+      <desc>Personal review of the album.</desc>
+      <date>2000.04.10</date>
+   </item>
+   <item id="208102-1006201460" type="url">
+      <url>http://www.tollbooth.org/reviews/del1.html</url>
+      <title>Delirious? Review by The Phantom Tollbooth</title>
+      <desc>Two reviews of the album.</desc>
+   </item>
+   <item id="208106-1006201460" type="url">
+      <url>http://www.emmanuelchurch.net/resources/cd_reviews/praiseworship/delirious/cutting_edge.shtml</url>
+      <title>Music Review: Delirious?: Cutting Edge</title>
+      <desc>Review of the praise and worship album, from Emmanuel Church, Philadelphia.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_1_&amp;_2" canapply="1" cansubmit="1">
+   <item id="13716-1006470170" type="release">
+      <title>Cutting Edge 1 &amp; 2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1993/1994</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? RecordsFurious? Records</label>
+      <cataloguenumber>SNIPCD1, SNIPMC1</cataloguenumber>
+      <tracklisting>   <track number="1" title="Message of the Cross" />
+         <track number="2" title="Singers Song" />
+         <track number="3" title="Lord You Have My Heart" />
+         <track number="4" title="What is this Thing Called Love?" />
+         <track number="5" title="The Crucible For Silver" />
+         <track number="6" title="Thank You for Saving Me" />
+         <track number="7" title="The Happy Song" />
+         <track number="8" title="Prophet Song" />
+         <track number="9" title="King of Love" />
+         <track number="10" title="Coming Back" />
+         <track number="11" title="Lead Me" />
+         <track number="12" title="I Could Sing of Your Love Forever" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/cuttingedge12.jpg" width="118" height="118" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_3_&amp;_4" canapply="1" cansubmit="1">
+   <item id="13717-1006470433" type="release">
+      <title>Cutting Edge 3 &amp; 4</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1995</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>SNIPCD2, SNIPMC2</cataloguenumber>
+      <tracklisting>   <track number="1" title="Did you Feel the Mountains Tremble?" />
+         <track number="2" title="I've Found Jesus" />
+         <track number="3" title="Oh Lead me" />
+         <track number="4" title="Shaken Up" />
+         <track number="5" title="I'm Not Ashamed" />
+         <track number="6" title="Find me in the River" />
+         <track number="7" title="Louder than the Radio" />
+         <track number="8" title="You Split the Earth" />
+         <track number="9" title="When All Around Has Fallen" />
+         <track number="10" title="I've Searched for Gold" />
+         <track number="11" title="Shout to the North" />
+         <track number="12" title="All I Want is You" />
+         <track number="13" title="Obsession" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/cuttingedge34.jpg" width="118" height="118" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience" canapply="1" cansubmit="1">
+   <subcat name="UK" items="1" />
+   <subcat name="US" items="1" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience/UK" canapply="1" cansubmit="1">
+   <summary>This double CD &quot;best of&quot; collection was released in the UK in January 2002.</summary>
+   <item id="20131-1011016857" type="release">
+      <title>Deeper: The d:finitive Worship Experience</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002.01.07</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <distributor>Fierce! Distribution and AMD (via Universal Distribution)</distributor>
+      <cataloguenumber>FURYCD5</cataloguenumber>
+      <tracklisting>   <disc number="1">
+         <track number="1" title="Did You Feel The Mountains Tremble (new version)" />
+         <track number="2" title="I Could Sing Of Your Love Forever (new version)" />
+         <track number="3" title="I've Found Jesus" />
+         <track number="4" title="I'm Not Ashamed" />
+         <track number="5" title="Deeper" />
+         <track number="6" title="Lord You Have My Heart (new version)" />
+         <track number="7" title="Sanctify" />
+         <track number="8" title="Not Forgotten (new song)" />
+         <track number="9" title="Shout To The North" />
+         <track number="10" title="History Maker" />
+         <track number="11" title="Follow" />
+         <track number="12" title="All The Way" />
+         <track number="13" title="Kiss Your Feet" />
+         </disc>
+         <disc number="2">
+         <track number="14" title="Happy Song (remix)" />
+         <track number="15" title="Come, Like You Promise" />
+         <track number="16" title="Revival Town" />
+         <track number="17" title="Hands Of Kindness" />
+         <track number="18" title="Find Me In The River" />
+         <track number="19" title="Jesus' Blood" />
+         <track number="20" title="King Of Love" />
+         <track number="21" title="Message Of The Cross" />
+         <track number="22" title="Oh Lead Me" />
+         <track number="23" title="Obsession" />
+         <track number="24" title="Thank You For Saving Me" />
+         <track number="25" title="What A Friend I've Found" />
+         </disc>
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_deeper.jpg" width="135" height="135" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience/US" canapply="1" cansubmit="1">
+   <item id="13853-1006557461" type="release">
+      <title>Deeper: The d:finitive Worship Experience (CD1)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.10.09</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>SPD51849</cataloguenumber>
+      <tracklisting>   <disc number="1">
+         <track number="1" title="Did You Feel The Mountains Tremble?" />
+         <track number="2" title="I Could Sing Of Your Love Forever" />
+         <track number="3" title="I've Found Jesus" />
+         <track number="4" title="I'm Not Ashamed" />
+         <track number="5" title="Deeper" />
+         <track number="6" title="Lord You Have My Heart" />
+         <track number="7" title="Sanctify" />
+         <track number="8" title="Not Forgotten" />
+         <track number="9" title="Shout To The North" />
+         <track number="10" title="History Maker" />
+         <track number="11" title="Follow" />
+         <track number="12" title="All The Way" />
+         <track number="13" title="Kiss Your Feet" />
+         </disc>
+         <disc number="2">
+         <track number="14" title="The Happy Song" />
+         <track number="15" title="Come, Like You Promise" />
+         <track number="16" title="Revival Town" />
+         <track number="17" title="Hands Of Kindness" />
+         <track number="18" title="Find Me In The River" />
+         <track number="19" title="Jesus Blood" />
+         <track number="20" title="King Of Love" />
+         <track number="21" title="Message Of The Cross" />
+         <track number="22" title="Oh Lead Me" />
+         <track number="23" title="Obsession" />
+         <track number="24" title="Thank You For Saving Me" />
+         <track number="25" title="What A Friend I've Found" />
+         </disc>
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_deeper.jpg" width="135" height="135" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Glo" canapply="1" cansubmit="1">
+   <subcat name="Links" items="7" />
+   <subcat name="Reviews" items="0" />
+   <item id="13720-1006471275" type="release">
+      <title>Glo (UK)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2000.07.29</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD3, FURYMC3</cataloguenumber>
+      <tracklisting>   <track number="1" title="God You Are my God" />
+         <track number="2" title="GLO in the Dark (Part 1)" />
+         <track number="3" title="God's Romance" />
+         <track number="4" title="Investigate" />
+         <track number="5" title="GLO in the Dark (Part 2)" />
+         <track number="6" title="What Would I Have Done?" />
+         <track number="7" title="My Glorious" />
+         <track number="8" title="Everything" />
+         <track number="9" title="Hang on to You" />
+         <track number="10" title="Intimate Stranger" />
+         <track number="11" title="Awaken the Dawn" />
+         <track number="12" title="GLO in the Dark (Part 3)" />
+         <track number="13" title="The Years Go By" />
+         <track number="14" title="Jesus' Blood" />
+         <track number="15" title="GLO in the Dark (Part 4)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/glo.jpg" width="180" height="177" />
+   </item>
+   <item id="540-1042825194" type="release">
+      <title>Glo (US)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2000.10.10</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>SPD1739</cataloguenumber>
+      <tracklisting>   <track number="1" title="God You Are my God" />
+         <track number="2" title="GLO in the Dark (Part 1)" />
+         <track number="3" title="God's Romance" />
+         <track number="4" title="Investigate" />
+         <track number="5" title="GLO in the Dark (Part 2)" />
+         <track number="6" title="What Would I Have Done?" />
+         <track number="7" title="My Glorious" />
+         <track number="8" title="Everything" />
+         <track number="9" title="Hang on to You" />
+         <track number="10" title="Intimate Stranger" />
+         <track number="11" title="Awaken the Dawn" />
+         <track number="12" title="GLO in the Dark (Part 3)" />
+         <track number="13" title="The Years Go By" />
+         <track number="14" title="Jesus' Blood" />
+         <track number="15" title="GLO in the Dark (Part 4)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/glo.jpg" width="180" height="177" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Glo/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208074-1006201460" type="url">
+      <url>http://www.christianguitar.ws/reviews/review.php?disc_ID=87</url>
+      <title>Christianguitar.ws - CD Reviews</title>
+      <desc>User submitted reviews of the album, with the option to add your own.</desc>
+   </item>
+   <item id="208086-1006201460" type="url">
+      <url>http://www.premieronline.co.uk/pages/database/music/FURYCD3.htm</url>
+      <title>Delirious? - Glo</title>
+      <desc>Review of the album, and audio samples.</desc>
+   </item>
+   <item id="208078-1006201460" type="url">
+      <url>http://christianmusic.about.com/musicperform/christianmusic/library/weekly/aa100900b.htm</url>
+      <title>Delirious? - Glo Review</title>
+      <desc>Album review by Robin Parrish of About.com.</desc>
+   </item>
+   <item id="208080-1006201460" type="url">
+      <url>http://www.worshipmusic.com/spd1739.html</url>
+      <title>Glo / Delirious? (CD)</title>
+      <desc>Track listing, audio samples, and a review.</desc>
+   </item>
+   <item id="208076-1006201460" type="url">
+      <url>http://sublime.hants.org.uk/dglow.html</url>
+      <title>Glo - Pre-release Review</title>
+      <desc>Pre-release review of the album, by Billy Kennedy.</desc>
+   </item>
+   <item id="208070-1006201460" type="url">
+      <url>http://www.jesusfreakhideout.com/cdreviews/Glo.asp</url>
+      <title>Jesusfreakhideout.com CD Review: Delirious?, Glo-ing Brite</title>
+      <desc>Album review, track listing, and audio samples.</desc>
+      <date>2000.08.21</date>
+   </item>
+   <item id="208082-1006201460" type="url">
+      <url>http://www.emmanuelchurch.net/resources/cd_reviews/altrock/delirious/cd_review_glo.shtml</url>
+      <title>Music Review: Delirious &amp;quot;Glo&amp;quot;</title>
+      <desc>Album review by Emmanuel Church, Philadelphia.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Glo/Reviews" canapply="1" cansubmit="1">
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/King_of_Fools" canapply="1" cansubmit="1">
+   <subcat name="Links" items="2" />
+   <subcat name="Reviews" items="0" />
+   <item id="13718-1006470913" type="release">
+      <title>King of Fools (UK)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.06.16</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD1, FURYMC1</cataloguenumber>
+      <description>This album reached number 13 in the UK album charts, on June 22nd, 1997.</description>
+      <tracklisting>   <track number="1" title="Sanctify" />
+         <track number="2" title="Deeper" />
+         <track number="3" title="Revival Town" />
+         <track number="4" title="All The Way" />
+         <track number="5" title="August 30th" />
+         <track number="6" title="Promise" />
+         <track number="7" title="King Or Cripple" />
+         <track number="8" title="Hands Of Kindness" />
+         <track number="9" title="White Ribbon Day" />
+         <track number="10" title="King Of Fools" />
+         <track number="11" title="History Maker" />
+         <track number="12" title="What A Friend I've Found" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/kingoffools.jpg" width="180" height="182" />
+   </item>
+   <item id="14383-1006904244" type="release">
+      <title>King of Fools (US)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1998.05.19</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>SPD1676</cataloguenumber>
+      <description>Deeper and Revival Town were remixes of the versions released on the UK version, and Louder Than the Radio did not appear on the UK version.</description>
+      <tracklisting>   <track number="1" title="Sanctify" />
+         <track number="2" title="Deeper" />
+         <track number="3" title="Revival Town" />
+         <track number="4" title="All The Way" />
+         <track number="5" title="August 30th" />
+         <track number="6" title="Promise" />
+         <track number="7" title="King Or Cripple" />
+         <track number="8" title="Hands Of Kindness" />
+         <track number="9" title="Louder Than The Radio" />
+         <track number="10" title="White Ribbon Day" />
+         <track number="11" title="King Of Fools" />
+         <track number="12" title="History Maker" />
+         <track number="13" title="What A Friend I've Found" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/kingoffools.jpg" width="180" height="182" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/King_of_Fools/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208088-1006201460" type="url">
+      <url>http://www.christianguitar.ws/reviews/review.php?disc_ID=151</url>
+      <title>Christianguitar.ws - CD Reviews</title>
+      <desc>User submitted reviews of the album, with the option to add your own.</desc>
+   </item>
+   <item id="208094-1006201460" type="url">
+      <url>http://homepage.ntlworld.com/dowbiggin/dreview.htm</url>
+      <title>Delirious? Review</title>
+      <desc>Brief review of the album &amp;quot;King of Fools&amp;quot;.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/King_of_Fools/Reviews" canapply="1" cansubmit="1">
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Libertad" canapply="1" cansubmit="1">
+   <item id="538-1042824449" type="release">
+      <title>Libertad</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002.11.16</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD6</cataloguenumber>
+      <description>Spanish language album.</description>
+      <tracklisting>   <track number="1" title="Preparen el Camino (Did you Feel the Mountains Tremble?)" />
+         <track number="2" title="Cantaré de tu Amor por Siempre (I Could Sing of Your Love Forever)" />
+         <track number="3" title="Tengo A Cristo (I've Found Jesus)" />
+         <track number="4" title="Grande Es El Señor (Thank You for Saving me)" />
+         <track number="5" title="Cantaria Sin Parar (The Happy Song)" />
+         <track number="6" title="Dios de Amor (King of Love)" />
+         <track number="7" title="El Mensaje de la Cruz (Message of the Cross)" />
+         <track number="8" title="Griten al Norte (Shout to the North)" />
+         <track number="9" title="Tuyo Es Mi Corazón (Lord You Have my Heart)" />
+         <track number="10" title="En El Río Me Encuentras (Find me In The River" />
+         <track number="11" title="No Me Avergüenzo (I'm not Ashamed)" />
+         <track number="12" title="Obsesión (Obsession)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious-libertad.gif" width="100" height="106" />
+   </item>
+   <item id="539-1042824492" type="release">
+      <title>Libertad (N. American Release)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2003.05.05</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD6</cataloguenumber>
+      <description>Spanish language album.</description>
+      <tracklisting>   <track number="1" title="Preparen el Camino (Did you Feel the Mountains Tremble?)" />
+         <track number="2" title="Cantaré de tu Amor por Siempre (I Could Sing of Your Love Forever)" />
+         <track number="3" title="Tengo A Cristo (I've Found Jesus)" />
+         <track number="4" title="Grande Es El Señor (Thank You for Saving me)" />
+         <track number="5" title="Cantaria Sin Parar (The Happy Song)" />
+         <track number="6" title="Dios de Amor (King of Love)" />
+         <track number="7" title="El Mensaje de la Cruz (Message of the Cross)" />
+         <track number="8" title="Griten al Norte (Shout to the North)" />
+         <track number="9" title="Tuyo Es Mi Corazón (Lord You Have my Heart)" />
+         <track number="10" title="En El Río Me Encuentras (Find me In The River" />
+         <track number="11" title="No Me Avergüenzo (I'm not Ashamed)" />
+         <track number="12" title="Obsesión (Obsession)" />
+      </tracklisting>
+      <asin>B000093FIT</asin>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious-libertad.gif" width="100" height="106" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Live_and_in_the_Can" canapply="1" cansubmit="1">
+   <item id="13850-1006557074" type="release">
+      <title>Live and in the Can (UK)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1996.12.01</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>LIVECD1, LIVEMC1</cataloguenumber>
+      <tracklisting>   <track number="1" title="(Part 1)" />
+         <track number="2" title="I'm Not Ashamed" />
+         <track number="3" title="Did You Feel The Mountains" />
+         <track number="4" title="(Part 2)" />
+         <track number="5" title="Oh Lead Me" />
+         <track number="6" title="Obsession" />
+         <track number="7" title="(Part 3)" />
+         <track number="8" title="(Part 4)" />
+         <track number="9" title="Come Like You Promise" />
+         <track number="10" title="(Part 5)" />
+         <track number="11" title="(Part 6)" />
+         <track number="12" title="What A Friend I've Found" />
+         <track number="13" title="(Part 7)" />
+         <track number="14" title="I've Found Jesus" />
+         <track number="15" title="(Part 8)" />
+         <track number="16" title="Lord's Prayer" />
+         <track number="17" title="(Part 9)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/liveandinthecan.jpg" width="158" height="158" />
+   </item>
+   <item id="13852-1006557277" type="release">
+      <title>Live and in the Can (US)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1998</releasedate>
+      <formats>CD</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? Records</label>
+      <tracklisting>   <track number="1" title="(Part 1)" />
+         <track number="2" title="I'm Not Ashamed" />
+         <track number="3" title="Did You Feel The Mountains" />
+         <track number="4" title="(Part 2)" />
+         <track number="5" title="Oh Lead Me" />
+         <track number="6" title="Obsession" />
+         <track number="7" title="(Part 3)" />
+         <track number="8" title="(Part 4)" />
+         <track number="9" title="Come Like You Promise" />
+         <track number="10" title="(Part 5)" />
+         <track number="11" title="(Part 6)" />
+         <track number="12" title=" What A Friend I've Found" />
+         <track number="13" title="(Part 7)" />
+         <track number="14" title="I've Found Jesus" />
+         <track number="15" title="(Part 8)" />
+         <track number="16" title="Lord's Prayer" />
+         <track number="17" title="(Part 9)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/liveandinthecan.jpg" width="158" height="158" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Mezzamorphis" canapply="1" cansubmit="1">
+   <subcat name="Links" items="12" />
+   <item id="13719-1006471118" type="release">
+      <title>Mezzamorphis (UK)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1999.04.12</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD2, FURYMC2</cataloguenumber>
+      <productcode>5033910001428</productcode>
+      <description>Two songs from this album were released as singles. It's O.K. reached number 18 in the UK charts (February 27th, 2000) and See the Star reached number 16 in the UK charts. (March 21st, 1999)</description>
+      <tracklisting>   <track number="1" title="Mezzanine Floor" />
+         <track number="2" title="Heaven" />
+         <track number="3" title="Follow" />
+         <track number="4" title="Bliss" />
+         <track number="5" title="It's O.K." />
+         <track number="6" title="Metamorphis" />
+         <track number="7" title="See The Star" />
+         <track number="8" title="Gravity" />
+         <track number="9" title="Beautiful Sun" />
+         <track number="10" title="Love Falls Down" />
+         <track number="11" title="Blindfold" />
+         <track number="12" title="Kiss Your Feet" />
+      </tracklisting>
+      <asin>B0000256NO</asin>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/mezzamorphis.jpg" width="180" height="178" />
+   </item>
+   <item id="13855-1006557664" type="release">
+      <title>Mezzamorphis (US)</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1999.06.08</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>SPD1677</cataloguenumber>
+      <description>The last two songs are only found on the US version of this album.</description>
+      <tracklisting>   <track number="1" title="Mezzanine Floor" />
+         <track number="2" title="Heaven" />
+         <track number="3" title="Follow" />
+         <track number="4" title="Bliss" />
+         <track number="5" title="Beautiful Sun" />
+         <track number="6" title="Metamorphis" />
+         <track number="7" title="See The Star" />
+         <track number="8" title="Gravity" />
+         <track number="9" title="It's OK" />
+         <track number="10" title="Love Falls Down" />
+         <track number="11" title="Blindfold" />
+         <track number="12" title="Kiss Your Feet" />
+         <track number="13" title="Jesus Blood" />
+         <track number="14" title="Deeper 99" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/mezzamorphis-US.jpg" width="150" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Mezzamorphis/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <item id="208052-1006201460" type="url">
+      <url>http://sublime.hants.org.uk/albrev.html</url>
+      <title>Album Review</title>
+      <desc>Two reviews of the album, one from Billy Kennedy, and one from Q Magazine.</desc>
+   </item>
+   <item id="208062-1006201460" type="url">
+      <url>http://www.tollbooth.org/review99/del992.html</url>
+      <title>A Review by The Phantom Tollbooth</title>
+      <desc>Three reviews of the album, Mezzamorphis.</desc>
+   </item>
+   <item id="208044-1006201460" type="url">
+      <url>http://www.ccmmagazine.com/archives/fullstory.asp?ID=781</url>
+      <title>CCM Magazine - Mezzamorphis</title>
+      <desc>Review of the album, by Dave Urbanski.</desc>
+      <date>1999.06.01</date>
+   </item>
+   <item id="208064-1006201460" type="url">
+      <url>http://www.christianguitar.ws/reviews/review.php?disc_ID=152</url>
+      <title>Christianguitar.ws - CD Reviews</title>
+      <desc>User submitted reviews of Mezzamorphis, with the option to add your own.</desc>
+   </item>
+   <item id="208066-1006201460" type="url">
+      <url>http://www.paulfp.co.uk/delirious/articles/herald_mezza.html</url>
+      <title>Christian Herald Review of Mezzamorphis</title>
+      <desc>Brief review of each track on the album, by Russ Bravo.</desc>
+      <date>1999.04.09</date>
+   </item>
+   <item id="208046-1006201460" type="url">
+      <url>http://www.ccmplanet.com/index?section=releases&amp;page=article&amp;id=9</url>
+      <title>Delirious - Mezzamorphis Review</title>
+      <desc>Brief review and photograph.</desc>
+   </item>
+   <item id="208056-1006201460" type="url">
+      <url>http://christianmusic.about.com/musicperform/christianmusic/library/weekly/aa060999a.htm</url>
+      <title>Delirious? - Mezzamorphis Review</title>
+      <desc>Album review, from About.com.</desc>
+      <date>1999.06.09</date>
+   </item>
+   <item id="208060-1006201460" type="url">
+      <url>http://www.realmagazine.com/new/reviews/delirious4.html</url>
+      <title>Delirious?'s Mezzamorphis</title>
+      <desc>Review by Timothy Y. of RealMagazine.com.</desc>
+      <date>1999.11.23</date>
+   </item>
+   <item id="208050-1006201460" type="url">
+      <url>http://www.jesusfreakhideout.com/cdreviews/Mezzamorphis.asp</url>
+      <title>Jesusfreakhideout.com CD Review: Delirious, Metamorphosis</title>
+      <desc>Review, track listing, and sound clips.</desc>
+      <date>1999.05.17</date>
+   </item>
+   <item id="208068-1006201460" type="url">
+      <url>http://www.gurlpages.com/teatra/mezzamorphis.html</url>
+      <title>Mezzamorphis - Another Phase of Delirium?</title>
+      <desc>Personal review of the album.</desc>
+      <date>1999.06.26</date>
+   </item>
+   <item id="208048-1006201460" type="url">
+      <url>http://www.i5ive.com/article.cfm/contemporary_christian_music/22437</url>
+      <title>Mezzamorphis: The Review - Suite101.com</title>
+      <desc>Review looking at the background to the album and songs on it.</desc>
+   </item>
+   <item id="208058-1006201460" type="url">
+      <url>http://sublime.hants.org.uk/albrev.html#top</url>
+      <title>Sublime - Reviews/Mezzamorphis</title>
+      <desc>Brief album reviews by Billy Kennedy and Rob Beattie.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Mission_Bell,_The" canapply="1" cansubmit="1">
+   <item id="11470-1181223094" type="release">
+      <title>The Mission Bell</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2005.11.07</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <description>US release 26th December, 2005.</description>
+      <tracklisting>   <track number="1" title="Stronger" />
+         <track number="2" title="Now is the Time" />
+         <track number="3" title="Solid Rock" />
+         <track number="4" title="All This Time" />
+         <track number="5" title="Miracle Maker" />
+         <track number="6" title="Here I Am Send Me" />
+         <track number="7" title="Fires Burn" />
+         <track number="8" title="Our God Reigns" />
+         <track number="9" title="Love is a Miracle" />
+         <track number="10" title="Paint the Town Red" />
+         <track number="11" title="Take Off My Shoes" />
+         <track number="12" title="I'll See You" />
+      </tracklisting>
+      <musicbrainzid>a0425613-e6f5-4ca1-ac19-6b6c324e678b</musicbrainzid>
+      <asin>B000BOG1KI</asin>
+      <cover src="/img/editors/rpfuller/delirious-missionbell.jpeg" width="150" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles" canapply="1" cansubmit="1">
+   <subcat name="DeEPer_EP" items="1" />
+   <subcat name="Deeper" items="1" />
+   <subcat name="I_Could_Sing_of_Your_Love_Forever" items="2" />
+   <subcat name="It's_O.K." items="2" />
+   <subcat name="Promise" items="2" />
+   <subcat name="See_the_Star" items="2" />
+   <subcat name="Waiting_for_the_Summer" items="2" />
+   <subcat name="White_Ribbon_Day" items="1" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/DeEPer_EP" canapply="1" cansubmit="1">
+   <item id="13729-1006475472" type="release">
+      <title>DeEPer EP</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.11.03</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio and Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY4, CAFURY4</cataloguenumber>
+      <tracklisting>   <track number="1" title="Deeper" />
+         <track number="2" title="Summer of Love" />
+         <track number="3" title="Touch" />
+         <track number="4" title="Sanctify (live at Wembley)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/DeEPer_EP.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/Deeper" canapply="1" cansubmit="1">
+   <item id="13730-1006475627" type="release">
+      <title>Deeper</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.05.05</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Studio and Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY2, CAFURY2</cataloguenumber>
+      <description>Deeper is available in MP3 format from &lt;a href=&quot;http://artists.mp3s.com/artists/284/delirious1.html&quot;&gt;mp3.com&lt;/a&gt;.</description>
+      <tracklisting>   <track number="1" title="Deeper (radio edit)" />
+         <track number="2" title="Deeper" />
+         <track number="3" title="Louder than the Radio (remix)" />
+         <track number="4" title="Come Like You Promise (live)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/deeper_single.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/I_Could_Sing_of_Your_Love_Forever" canapply="1" cansubmit="1">
+   <summary>I Could Sing of Your Love Forever is available for free download, in MP3 format, at &lt;a href=&quot;http://artists.mp3s.com/artists/284/delirious1.html&quot;&gt;mp3.com&lt;/a&gt;.</summary>
+   <item id="15913-1008027811" type="release">
+      <title>I Could Sing of Your Love Forever - CD 1</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.12.10</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio and Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY9</cataloguenumber>
+      <tracklisting>   <track number="1" title="I Could Sing Of Your Love Forever (Radio edit)" />
+         <track number="2" title="Everything (Live USA radio session)" />
+         <track number="3" title="Bliss (&amp;quot;britrix&amp;quot; re:mix)" />
+         <track number="4" title="I Could Sing Of Your Love Forever (Video) " />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/icouldsing1.jpg" width="150" height="150" />
+   </item>
+   <item id="15914-1008027885" type="release">
+      <title>I Could Sing of Your Love Forever - CD 2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.12.10</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDXFURY9</cataloguenumber>
+      <tracklisting>   <track number="1" title="I Could Sing of Your Love Forever (Full version)" />
+         <track number="2" title="American President " />
+         <track number="3" title="Every Child Counts (HopeHIV video)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/icouldsing2.jpg" width="150" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/It's_O.K." canapply="1" cansubmit="1">
+   <item id="13725-1006474328" type="release">
+      <title>It's OK CD1</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2000.02.21</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY6</cataloguenumber>
+      <tracklisting>   <track number="1" title="Its OK (with video)" />
+         <track number="2" title="Pursuit of Happiness" />
+         <track number="3" title="Come Like You Promise" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/itsokcd1.jpg" width="165" height="162" />
+   </item>
+   <item id="13726-1006474442" type="release">
+      <title>It's OK CD2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2000.02.21</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDXFURY6</cataloguenumber>
+      <tracklisting>   <track number="1" title="Its OK" />
+         <track number="2" title="Jesus Blood" />
+         <track number="3" title="Pursuit of Happiness video" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/itsokcd2.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/Promise" canapply="1" cansubmit="1">
+   <item id="13731-1006475759" type="release">
+      <title>Promise CD1</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.07.14</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY3</cataloguenumber>
+      <tracklisting>   <track number="1" title="Promise (radio edit)" />
+         <track number="2" title="Deeper (Mark Edwards Summertime Mix)" />
+         <track number="3" title="You Split the Earth" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/promise1.jpg" width="165" height="162" />
+   </item>
+   <item id="13732-1006475828" type="release">
+      <title>Promise CD2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.07.14</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio and Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDXFURY3</cataloguenumber>
+      <tracklisting>   <track number="1" title="Promise (live acoustic version)" />
+         <track number="2" title="Deeper (Mark Edwards Prophet Mix)" />
+         <track number="3" title="d:Interview (a ten minute interview with the band)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/promise2.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/See_the_Star" canapply="1" cansubmit="1">
+   <item id="13727-1006475134" type="release">
+      <title>See the Star CD1</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1999.03.15</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY5</cataloguenumber>
+      <tracklisting>   <track number="1" title="See the Star" />
+         <track number="2" title="Follow" />
+         <track number="3" title="See the Star (d:llatrix Dub)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/seethestar1.jpg" width="165" height="162" />
+   </item>
+   <item id="13728-1006475201" type="release">
+      <title>See the Star CD2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1999.15.03</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDXFURY5</cataloguenumber>
+      <tracklisting>   <track number="1" title="See the Star" />
+         <track number="2" title="Obsession (Odsession mix)" />
+         <track number="3" title="See the Star Video (enhanced CD-ROM)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/seethestar2.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/Waiting_for_the_Summer" canapply="1" cansubmit="1">
+   <item id="13723-1006473795" type="release">
+      <title>Waiting for the Summer CD1</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.06.04</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY7</cataloguenumber>
+      <tracklisting>   <track number="1" title="Waiting for the Summer" />
+         <track number="2" title="Show Me Heaven" />
+         <track number="3" title="Waiting for the Summer (re-mix)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/waitingforthesummer1.jpg" width="188" height="162" />
+   </item>
+   <item id="13724-1006473855" type="release">
+      <title>Waiting for the Summer CD2</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.06.04</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDXFURY7</cataloguenumber>
+      <tracklisting>   <track number="1" title="Waiting for the Summer (full length)" />
+         <track number="2" title="Waiting for the Summer (dba mix)" />
+         <track number="3" title="Waiting for the Summer (video)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/waitingforthesummer2.jpg" width="188" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Singles/White_Ribbon_Day" canapply="1" cansubmit="1">
+   <item id="13733-1006476005" type="release">
+      <title>White Ribbon Day</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1997.02.17</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>CDFURY1, CAFURY1</cataloguenumber>
+      <description>White Ribbon Day is available for free download, in MP3 format, from &lt;a href=&quot;http://artists.mp3s.com/artists/284/delirious1.html&quot;&gt;mp3.com&lt;/a&gt;.</description>
+      <tracklisting>   <track number="1" title="White Ribbon Day (radio edit)" />
+         <track number="2" title="White Ribbon Day" />
+         <track number="3" title="Absolutely Absolute" />
+         <track number="4" title="White Ribbon Day (two mile free fall)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/whiteribbonday.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/Touch" canapply="1" cansubmit="1">
+   <relcat cat="Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover?" />
+   <item id="536-1042823935" type="release">
+      <title>Touch</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002.11.19</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD7</cataloguenumber>
+      <tracklisting>   <track number="1" title="Touch" />
+         <track number="2" title="Love is the Compass (remixed)" />
+         <track number="3" title="Fire" />
+         <track number="4" title="Alien" />
+         <track number="5" title="Angel in Disguise" />
+         <track number="6" title="Rollercoaster" />
+         <track number="7" title="Show me Heaven" />
+         <track number="8" title="Take me Away" />
+         <track number="9" title="Waiting for the Summer (remixed)" />
+         <track number="10" title="Stealing Time" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious-touch.gif" width="163" height="163" />
+   </item>
+   <item id="537-1042824008" type="release">
+      <title>Touch - Bonus Disc</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002.11.19</releasedate>
+      <formats>CD</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCD7</cataloguenumber>
+      <tracklisting>   <track number="1" title="Deeper" />
+         <track number="2" title="My Glorious" />
+         <track number="3" title="Did you Feel the Mountains Tremble" />
+         <track number="4" title="What a Friend I've Found" />
+         <track number="5" title="I Could Sing of your Love Forever" />
+         <track number="6" title="There is a Light" />
+         <track number="7" title="Take me Away (CD-ROM video)" />
+         <track number="8" title="Sanctify (CD-ROM video)" />
+         <track number="9" title="I Could Sing of your Love Forever (CD-ROM video)" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious-touch.gif" width="163" height="163" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/World_Service" canapply="1" cansubmit="1">
+   <item id="184-1067730916" type="release">
+      <title>World Service</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2003.12.15</releasedate>
+      <formats>CD</formats>
+      <studiolive>Studio</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>FURYCDSP8</cataloguenumber>
+      <productcode>5033910001596</productcode>
+      <producers>Julian Kindred &amp; Delirious?</producers>
+      <guestmusicians>Daniel Bedingfield (Guest Vocals on &quot;Every Little Thing&quot;)</guestmusicians>
+      <description>Released 10th February, 2004 in the United States.Available in standard packaging and special edition packaging.</description>
+      <tracklisting>   <track number="1" title="Grace Like a River" length="4:06" />
+         <track number="2" title="Rain Down" length="4:51" />
+         <track number="3" title="God in Heaven" length="4:28" />
+         <track number="4" title="Majesty (Here I Am)" length="5:31" />
+         <track number="5" title="Inside Outside" length="5:41" />
+         <track number="6" title="Free" length="3:59" />
+         <track number="7" title="Everyone Knows" length="4:30" />
+         <track number="8" title="With You" length="4:36" />
+         <track number="9" title="Mountains High" length="3:55" />
+         <track number="10" title="I was Blind" length="5:52" />
+         <track number="11" title="Feel it Comin On" length="5:10" />
+         <track number="12" title="Every Little Thing" length="4:34" />
+      </tracklisting>
+      <musicbrainzid>1ae85ea3-97c6-4a24-b38f-749c974165e5</musicbrainzid>
+      <asin>B0001AP0OA</asin>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_worldservice.jpeg" width="135" height="135" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Discography/dTour_Live" canapply="1" cansubmit="1">
+   <item id="13722-1006473628" type="release">
+      <title>d:Tour 1997 Live</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1998.04.01</releasedate>
+      <formats>CD, Cassette</formats>
+      <studiolive>Live</studiolive>
+      <label>Furious? Records</label>
+      <cataloguenumber>LIVECD2, LIVEMC2</cataloguenumber>
+      <tracklisting>   <track number="1" title="Intro" />
+         <track number="2" title="Sanctify" />
+         <track number="3" title="Come Like You Promise" />
+         <track number="4" title="Promise" />
+         <track number="5" title="Summer of Love" />
+         <track number="6" title="Hands of Kindness" />
+         <track number="7" title="King or Cripple" />
+         <track number="8" title="I'm Not Ashamed" />
+         <track number="9" title="King of Fools" />
+         <track number="10" title="Obsession" />
+         <track number="11" title="History Maker" />
+         <track number="12" title="All the Way" />
+         <track number="13" title="Deeper" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/dtour1997live.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Links" dmozattrib="1" canapply="1" cansubmit="1">
+   <symlink name="Articles" target="Bands_and_Artists/D/Delirious/Articles/Links" items="3" />
+   <item id="207970-1006201459" type="url" cool="1">
+      <url>http://www.delirious.co.uk/</url>
+      <title>Delirious?</title>
+      <desc>Official site. Includes news, photographs, a list of tour dates, contact details, and merchandise information.</desc>
+   </item>
+   <item id="34382-1016669343" type="url" cool="1">
+      <url>http://www.delirious.org.uk/</url>
+      <title>Delirious?</title>
+      <desc>Unofficial site run by Dave Wood, with news, photographs, an archive of reviews, press releases, and articles, and tour dates.</desc>
+   </item>
+   <item id="208026-1006201460" type="url">
+      <url>http://www.christianitytoday.com/music/artists/delirious.html</url>
+      <title>ChristianityToday.com - Music - Delirious</title>
+      <desc>Discography, biography, interviews, and links to similar artists.</desc>
+   </item>
+   <item id="208012-1006201460" type="url">
+      <url>http://www.geocities.com/RainForest/Vines/6059/deliriou5/dindex.html</url>
+      <title>Crazy Jen's Deliriou5? Page</title>
+      <desc>Includes lyrics, photographs, tablature, and reviews.</desc>
+   </item>
+   <item id="207978-1006201459" type="url">
+      <url>http://www.britlinks.co.uk/delirious/</url>
+      <title>d:Britlinks</title>
+      <desc>Links to news, reviews, similar bands and other fan sites, along with a discography and a photo gallery.</desc>
+   </item>
+   <item id="208010-1006201460" type="url">
+      <url>http://www.angelfire.com/or/christianmusic/delirious.html</url>
+      <title>Deliriou5?</title>
+      <desc>Lyrics for the albums &amp;quot;King of Fools&amp;quot; and &amp;quot;Mezzamorphis&amp;quot;.</desc>
+   </item>
+   <item id="18462-1010527952" type="url">
+      <url>http://theorderofthesith.tripod.com/delirious.html</url>
+      <title>Deliriou5? Fan Page</title>
+      <desc>List of band members, discography, news, and photographs.</desc>
+   </item>
+   <item id="13166-1059871580" type="url">
+      <url>http://www.gospelsite.net/?section=artists&amp;amp;page=artist&amp;amp;id=7</url>
+      <title>Delirious? at gospelsite.net</title>
+      <desc>News, reviews, biography, discography, and photographs.</desc>
+   </item>
+   <item id="207986-1006201459" type="url">
+      <url>http://deliriousford.tripod.com/</url>
+      <title>Delirious for d:</title>
+      <desc>Fan site. Includes news, a discography, a list of tour dates, audio clips, photographs, links, and a message board.</desc>
+   </item>
+   <item id="34383-1016669343" type="url">
+      <url>http://www.deliriousland.net</url>
+      <title>deliriousland?</title>
+      <desc>Fan site, with news, photographs, discography, tour information, and links.</desc>
+   </item>
+   <item id="6474-1081428236" type="url">
+      <url>http://groups.msn.com/Delirious/_whatsnew.msnw</url>
+      <title>Delirious? MSN Community</title>
+      <desc>Message board, calendar, and photographs.</desc>
+   </item>
+   <item id="854-1035075662" type="url">
+      <url>http://www.delirious.uk.net/</url>
+      <title>delirious.uk.net</title>
+      <desc>Unofficial site with tour dates, a photo gallery, and media articles.</desc>
+   </item>
+   <item id="6478-1081431805" type="url">
+      <url>http://www.paulfp.co.uk/delirious/</url>
+      <title>Delirious? [unofficial]</title>
+      <desc>Unofficial site with information on videos, albums and singles, media articles, biographies, and pictures from the videos.</desc>
+   </item>
+   <item id="207998-1006201460" type="url">
+      <url>http://cmusicweb.com/rock/delirious/</url>
+      <title>d:musicweb</title>
+      <desc>Includes a list of band members, news, album information, and reviews of a selection of concerts.</desc>
+   </item>
+   <item id="208016-1006201460" type="url">
+      <url>http://website.lineone.net/%7Esteven.davies/MAINDEL.html</url>
+      <title>D:Wales</title>
+      <desc>Includes reviews, interviews, a biography, photographs, and lyrics.</desc>
+   </item>
+   <item id="208004-1006201460" type="url">
+      <url>http://www.garethharrison.org.uk/home/delirious.html</url>
+      <title>Gareth Harrison Web Portal</title>
+      <desc>RealVideo format video of their May 2001 performance on Live and Kicking, at 56Kbps and 150Kbps.</desc>
+   </item>
+   <item id="208024-1006201460" type="url">
+      <url>http://www.hob.com/onlinemusic/concerts/concert.asp?conid=236</url>
+      <title>hob.com - Delirious Concert Archive</title>
+      <desc>Video footage of their concert on the 27th July, 2000, in Windows Media and RealVideo formats. [Requires free membership.]</desc>
+      <date>2000.07.27</date>
+   </item>
+   <item id="855-1035075663" type="url">
+      <url>http://people.vanderbilt.edu/~jason.tan/delirious.html</url>
+      <title>Jason's Delirious? Page</title>
+      <desc>Photograph and set list from the Worship Together conference, a list of band members, news, and information.</desc>
+   </item>
+   <item id="208028-1006201460" type="url">
+      <url>http://website.lineone.net/~steven.davies/Lyrics.html</url>
+      <title>Lyrics</title>
+      <desc>Lyrics for the album &amp;quot;King of Fools&amp;quot;.</desc>
+   </item>
+   <item id="208008-1006201460" type="url">
+      <url>http://www.users.globalnet.co.uk/%7Edbentley/</url>
+      <title>Metamorphosis</title>
+      <desc>Includes a biography, discography, photographs, and a discussion board.</desc>
+   </item>
+   <item id="207982-1006201459" type="url">
+      <url>http://www.zmb61.ukgateway.net/</url>
+      <title>Mezzamorphine</title>
+      <desc>Unofficial site with a biography, release information and other band news.</desc>
+   </item>
+   <item id="207980-1006201459" type="url">
+      <url>http://www.sphericalbowl.co.uk/amdfaq/</url>
+      <title>The alt.music.delirious FAQ</title>
+      <desc>Main version of the official FAQ for the newsgroup alt.music.delirious.</desc>
+   </item>
+   <item id="208030-1006201460" type="url">
+      <url>http://www.tsrocks.com/bios/delirious.shtml</url>
+      <title>TSRocks.com - Delirious</title>
+      <desc>Biography and discography.</desc>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases" canapply="1" cansubmit="1">
+   <subcat name="America" items="1" />
+   <subcat name="Deeper" items="1" />
+   <subcat name="I_Could_Sing_of_Your_Love_Forever" items="1" />
+   <subcat name="Majesty_[Here_I_am]" items="1" />
+   <subcat name="Rain_Down" items="1" />
+   <subcat name="Take_me_Away" items="1" />
+   <subcat name="White_Ribbon_Day" items="1" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/America" canapply="1" cansubmit="1">
+   <item id="34824-1018561502" type="onlinerelease">
+      <title>America</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3 (Streaming and Download)</formats>
+      <description>Released on mp3.com in response to the events of September 11th, 2001.&lt;p&gt;Track originally released on &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover/&quot;&gt;Audio Lessonover?&lt;/a&gt;</description>
+      <availabilitynotes>Formerly available for download from mp3.com, but no longer available online.</availabilitynotes>
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/Deeper" canapply="1" cansubmit="1">
+   <item id="34826-1018562522" type="onlinerelease">
+      <title>Deeper</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3 (Streaming and Download)</formats>
+      <availablefrom>http://artists.mp3s.com/artists/284/delirious1.html</availablefrom>
+      <free>on</free>
+      <description>This is the original version of Deeper that appeared on the album &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/King_of_Fools/&quot;&gt;King of Fools&lt;/a&gt; in 1997.It was also released on the &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/Deeper/&quot;&gt;Deeper&lt;/a&gt; single in May, 1997.</description>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/deeper_single.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/I_Could_Sing_of_Your_Love_Forever" canapply="1" cansubmit="1">
+   <item id="34827-1018562694" type="onlinerelease">
+      <title>I Could Sing of Your Love Forever</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2002</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3 (Streaming and Download)</formats>
+      <availablefrom>http://artists.mp3s.com/artists/284/delirious1.html</availablefrom>
+      <free>on</free>
+      <description>This is the version of this track that was released as a &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/I_Could_Sing_of_Your_Love_Forever/&quot;&gt;single&lt;/a&gt; in December, 2002.</description>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/icouldsing1.jpg" width="150" height="150" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/Majesty_[Here_I_am]" canapply="1" cansubmit="1">
+   <item id="190-1067731588" type="onlinerelease">
+      <title>Majesty [Here I am]</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2003.10.01</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3</formats>
+      <availablefrom>http://artists.mp3s.com/artists/284/delirious1.html</availablefrom>
+      <free>on</free>
+      <description>&lt;p&gt;Taken from the album &quot;&lt;a href=&quot;/Bands_and_Artists/D/Delirious/Discography/World_Service/&quot;&gt;World Service&lt;/a&gt;&quot;.&lt;p&gt;Also available is:&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/majesty_sheetmusic.pdf&quot;&gt;Musical Score&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/majesty_cover.pdf&quot;&gt;Front Cover&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/majesty_backtray.pdf&quot;&gt;Back Cover&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/majesty_onbody.pdf&quot;&gt;Body Artwork&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_majesty.gif" width="135" height="134" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/Rain_Down" canapply="1" cansubmit="1">
+   <item id="187-1067731225" type="onlinerelease">
+      <title>Rain Down</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2003.11.01</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3</formats>
+      <description>&lt;p&gt;Taken from the album &quot;&lt;a href=&quot;/Bands_and_Artists/D/Delirious/Discography/World_Service/&quot;&gt;World Service&lt;/a&gt;&quot;.&lt;p&gt;Also available is:&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/rain_down_music_score.pdf&quot;&gt;Musical Score&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/rain_down_cover.pdf&quot;&gt;Front Cover&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/rain_down_backtray.pdf&quot;&gt;Back Cover&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.delirious.co.uk/images/pdf/rain_down_onbody.pdf&quot;&gt;Body Artwork&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Wallpaper: &lt;a href=&quot;http://www.delirious.co.uk/images/wallpaper/rd_wp_800_600.jpg&quot;&gt;800x600&lt;/a&gt; &lt;a href=&quot;http://www.delirious.co.uk/images/wallpaper/rd_wp_1024_768.jpg&quot;&gt;1024x768&lt;/a&gt; &lt;a href=&quot;http://www.delirious.co.uk/images/wallpaper/rd_wp_1600_1200.jpg&quot;&gt;1600x1200&lt;/a&gt; &lt;/ul&gt;</description>
+      <availabilitynotes>Formerly available for download from mp3.com, but no longer available online.</availabilitynotes>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_raindown.jpeg" width="135" height="134" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/Take_me_Away" canapply="1" cansubmit="1">
+   <item id="34823-1018561290" type="onlinerelease">
+      <title>Take me Away</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001.07.23</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3 (Streaming and Download)</formats>
+      <availabilitynotes>&lt;p&gt;Formerly available for download from mp3.com, but no longer available online.&lt;/p&gt;&lt;p&gt;This track was released exclusively online as a single, then later on two albums, &lt;a href=&quot;/Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover%3F/&quot;&gt;Audio Lessonover?&lt;/a&gt; and &lt;a href=&quot;/Bands_and_Artists/D/Delirious/Discography/Touch/&quot;&gt;Touch&lt;/a&gt;.</availabilitynotes>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/takemeaway.jpg" width="150" height="130" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Online_Releases/White_Ribbon_Day" canapply="1" cansubmit="1">
+   <item id="34825-1018561703" type="onlinerelease">
+      <title>White Ribbon Day</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2001</releasedate>
+      <studiolive>Studio</studiolive>
+      <formats>MP3 (Streaming and Download)</formats>
+      <availablefrom>http://artists.mp3s.com/artists/284/delirious1.html</availablefrom>
+      <free>on</free>
+      <description>Released in response to the events of September 11th, 2001, after requests from fans of the band.&lt;p&gt;This song, &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/White_Ribbon_Day/&quot;&gt;&quot;White Ribbon Day&quot;&lt;/a&gt; was the band's first single release, the song was also on the album &lt;a href=&quot;http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/King_of_Fools/&quot;&gt;King of Fools&lt;/a&gt;.</description>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/whiteribbonday.jpg" width="165" height="162" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Timeline" canapply="1" cansubmit="1">
+   <item id="545-1042826806" type="timelineevent">
+      <date>1993/1994</date>
+      <title>&quot;Cutting Edge 1 &amp; 2&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_1_&amp;_2/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/cuttingedge12.jpg" width="100" height="100" />
+   </item>
+   <item id="551-1042826806" type="timelineevent">
+      <date>1995</date>
+      <title>&quot;Cutting Edge 3 &amp; 4&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Cutting_Edge_3_&amp;_4/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/cuttingedge34.jpg" width="100" height="100" />
+   </item>
+   <item id="559-1042826806" type="timelineevent">
+      <date>1996.12.01</date>
+      <title>&quot;Live and in the Can&quot; Released in the UK</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Live_and_in_the_Can/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/liveandinthecan.jpg" width="100" height="100" />
+   </item>
+   <item id="568-1042827262" type="timelineevent">
+      <date>1997.06.16</date>
+      <title>&quot;King of Fools&quot; Released in the UK</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/King_of_Fools/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/kingoffools.jpg" width="100" height="100" />
+   </item>
+   <item id="558-1042826806" type="timelineevent">
+      <date>1997.07.14</date>
+      <title>&quot;Promise&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/Promise/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/promise1.jpg" width="100" height="100" />
+   </item>
+   <item id="543-1042826806" type="timelineevent">
+      <date>1997.11.03</date>
+      <title>&quot;DeEPer EP&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/DeEPer_EP/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/DeEPer_EP.jpg" width="100" height="100" />
+   </item>
+   <item id="552-1042826806" type="timelineevent">
+      <date>1998</date>
+      <title>&quot;Cutting Edge&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Cutting_Edge/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/cuttingedge-US.jpg" width="100" height="100" />
+   </item>
+   <item id="566-1042826945" type="timelineevent">
+      <date>1998</date>
+      <title>&quot;Live and in the Can&quot; Released in the US</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Live_and_in_the_Can/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/liveandinthecan.jpg" width="100" height="100" />
+   </item>
+   <item id="541-1042826806" type="timelineevent">
+      <date>1998.04.01</date>
+      <title>&quot;A View from the Terraces&quot; Video Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Videos/View_from_the_Terraces,_A/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/viewfromtheterraces.jpg" width="150" height="230" />
+   </item>
+   <item id="557-1042826806" type="timelineevent">
+      <date>1998.04.01</date>
+      <title>&quot;d:Tour Live&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/dTour_Live/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/dtour1997live.jpg" width="100" height="100" />
+   </item>
+   <item id="556-1042826806" type="timelineevent">
+      <date>1998.05.19</date>
+      <title>&quot;King of Fools&quot; Released in the US</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/King_of_Fools/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/kingoffools.jpg" width="100" height="100" />
+   </item>
+   <item id="542-1042826806" type="timelineevent">
+      <date>1999.03.15</date>
+      <title>&quot;See the Star&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/See_the_Star/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/seethestar1.jpg" width="100" height="100" />
+   </item>
+   <item id="569-1042827289" type="timelineevent">
+      <date>1999.04.12</date>
+      <title>&quot;Mezzamorphis&quot; Released in the UK</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Mezzamorphis/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/mezzamorphis.jpg" width="100" height="100" />
+   </item>
+   <item id="565-1042826806" type="timelineevent">
+      <date>1999.06.08</date>
+      <title>&quot;Mezzamorphis&quot; Released in the US</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Mezzamorphis/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/mezzamorphis-US.jpg" width="100" height="100" />
+   </item>
+   <item id="553-1042826806" type="timelineevent">
+      <date>2000.02.21</date>
+      <title>&quot;It's O.K.&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/It's_O.K./</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/itsokcd1.jpg" width="100" height="100" />
+   </item>
+   <item id="546-1042826806" type="timelineevent">
+      <date>2000.07.29</date>
+      <title>&quot;Glo&quot; Released in the UK</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Glo/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/glo.jpg" width="100" height="100" />
+   </item>
+   <item id="567-1042827222" type="timelineevent">
+      <date>2000.10.10</date>
+      <title>&quot;Glo&quot; Released in the US</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Glo/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/glo.jpg" width="100" height="100" />
+   </item>
+   <item id="554-1042826806" type="timelineevent">
+      <date>2000.12.04</date>
+      <title>&quot;Pro-mod:e&quot; Video Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Videos/Pro-mode/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/promode.jpg" width="150" height="230" />
+   </item>
+   <item id="550-1042826806" type="timelineevent">
+      <date>2001</date>
+      <title>&amp;quot;America&amp;quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/America/</url>
+   </item>
+   <item id="562-1042826806" type="timelineevent">
+      <date>2001</date>
+      <title>&amp;quot;White Ribbon Day&amp;quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/White_Ribbon_Day/</url>
+   </item>
+   <item id="560-1042826806" type="timelineevent">
+      <date>2001.06.04</date>
+      <title>&quot;Waiting for the Summer&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Singles/Waiting_for_the_Summer/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/waitingforthesummer1.jpg" width="100" height="100" />
+   </item>
+   <item id="555-1042826806" type="timelineevent">
+      <date>2001.07.23</date>
+      <title>&quot;Take me Away&quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/Take_me_Away/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/takemeaway.jpg" width="100" height="100" />
+   </item>
+   <item id="564-1042826806" type="timelineevent">
+      <date>2001.08.06</date>
+      <title>&quot;Audio Lessonover?&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Audio_Lessonover/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/audiolessonover.jpg" width="100" height="100" />
+   </item>
+   <item id="547-1042826806" type="timelineevent">
+      <date>2001.10.09</date>
+      <title>&quot;Deeper: The d:finitive Worship Experience&quot; Released in the US</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience/US/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_deeper.jpg" width="100" height="100" />
+   </item>
+   <item id="544-1042826806" type="timelineevent">
+      <date>2002</date>
+      <title>&amp;quot;Deeper&amp;quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/Deeper/</url>
+   </item>
+   <item id="549-1042826806" type="timelineevent">
+      <date>2002</date>
+      <title>&amp;quot;I Could Sing of Your Love Forever&amp;quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/I_Could_Sing_of_Your_Love_Forever/</url>
+   </item>
+   <item id="571-1042827900" type="timelineevent">
+      <date>2002.01.07</date>
+      <title>&quot;Deeper: The d:finitive Worship Experience&quot; Released in the UK</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Deeper_The_dfinitive_Worship_Experience/UK/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_deeper.jpg" width="100" height="100" />
+   </item>
+   <item id="548-1042826806" type="timelineevent">
+      <date>2002.11.16</date>
+      <title>&quot;Libertad&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Libertad/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious-libertad.gif" width="100" height="100" />
+   </item>
+   <item id="563-1042826806" type="timelineevent">
+      <date>2002.11.19</date>
+      <title>&quot;Touch&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Touch/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious-touch.gif" width="100" height="100" />
+   </item>
+   <item id="561-1042826806" type="timelineevent">
+      <date>2002.11.30</date>
+      <title>&quot;Access:D&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/AccessD/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious-accessd.gif" width="100" height="100" />
+   </item>
+   <item id="570-1042827674" type="timelineevent">
+      <date>2003.05.05</date>
+      <title>&quot;Libertad&quot; Released in North America</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/Libertad/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious-libertad.gif" width="100" height="100" />
+   </item>
+   <item id="442-1071697158" type="timelineevent">
+      <date>2003.05.23</date>
+      <title>&quot;Archive:d&quot; Video Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Videos/Archived/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_archived.jpeg" width="135" height="191" />
+   </item>
+   <item id="444-1071697158" type="timelineevent">
+      <date>2003.10.01</date>
+      <title>&quot;Majesty [Here I am]&quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/Majesty_[Here_I_am]/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_majesty.gif" width="135" height="134" />
+   </item>
+   <item id="443-1071697158" type="timelineevent">
+      <date>2003.11.01</date>
+      <title>&quot;Rain Down&quot; Released Online</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Online_Releases/Rain_Down/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_raindown.jpeg" width="135" height="134" />
+   </item>
+   <item id="441-1071697158" type="timelineevent">
+      <date>2003.12.15</date>
+      <title>&quot;World Service&quot; Released</title>
+      <url>http://musicmoz.org/Bands_and_Artists/D/Delirious/Discography/World_Service/</url>
+      <img src="http://musicmoz.org/img/editors/rpfuller/delirious_worldservice.jpeg" width="135" height="135" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Videos" canapply="1" cansubmit="1">
+   <subcat name="Archived" items="1" />
+   <subcat name="Pro-mode" items="1" />
+   <subcat name="View_from_the_Terraces,_A" items="1" />
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Videos/Archived" canapply="1" cansubmit="1">
+   <item id="192-1067732094" type="video">
+      <title>Archive:d</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2003.05.23</releasedate>
+      <formats>DVD (Regionless)</formats>
+      <studiolive>Studio and Live</studiolive>
+      <description>Includes all the material from &quot;A View from the Terraces&quot; and &quot;Pro:mode&quot;, along with five live video projections (Fire, Alien, Rollercoaster, Obsession, Investigate) and previously unreleased videos to Waiting For The Summer, I Could Sing of Your Love Forever and Take Me Away.</description>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/delirious_archived.jpeg" width="135" height="191" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Videos/Pro-mode" canapply="1" cansubmit="1">
+   <item id="34829-1018563351" type="video">
+      <title>Pro-mod:e</title>
+      <genre>Christian Rock</genre>
+      <releasedate>2000.12.04</releasedate>
+      <formats>VHS/PAL</formats>
+      <classification>BBFC Exempt</classification>
+      <studiolive>Studio and Live</studiolive>
+      <label>Furious? Records</label>
+      <distributor>Fierce! Distribution</distributor>
+      <cataloguenumber>VIDEO2</cataloguenumber>
+      <producers>Andy (boomer) Hutch and Furious? Records</producers>
+      <description>Approximately 45 minutes long, containing all the band's pop videos to date, along with the track 'Everything' from Glo, and backstage footage.</description>
+      <tracklisting>   <track number="1" title="Deeper" />
+         <track number="2" title="Promise" />
+         <track number="3" title="Sanctify" />
+         <track number="4" title="See The Star" />
+         <track number="5" title="Gravity" />
+         <track number="6" title="Pursuit Of Happiness" />
+         <track number="7" title="It's OK" />
+         <track number="8" title="Everything" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/promode.jpg" width="150" height="230" />
+   </item>
+</category>
+
+<category name="Bands_and_Artists/D/Delirious/Videos/View_from_the_Terraces,_A" canapply="1" cansubmit="1">
+   <item id="34828-1018563123" type="video">
+      <title>A View from the Terraces</title>
+      <genre>Christian Rock</genre>
+      <releasedate>1998.04.01</releasedate>
+      <formats>VHS/PAL</formats>
+      <studiolive>Live</studiolive>
+      <cataloguenumber>VIDEO1</cataloguenumber>
+      <productcode>5033910001084</productcode>
+      <tracklisting>   <track number="1" title="Sanctify (Footage from Wembley &amp;amp; d:Tour)" />
+         <track number="2" title="Come Like You Promise" />
+         <track number="3" title="King of Fools" />
+         <track number="4" title="Deeper (Promotional Video)" />
+         <track number="5" title="August 30th" />
+         <track number="6" title="King or Cripple" />
+         <track number="7" title="History Maker" />
+         <track number="8" title="Louder Than The Radio (Short Clip)" />
+         <track number="9" title="Revival Town (Includes 'Roundabout' Video Footage)" />
+         <track number="10" title="Summer of Love" />
+         <track number="11" title="Promise (Promotional Video)" />
+         <track number="12" title="I'm Not Ashamed" />
+      </tracklisting>
+      <cover src="http://musicmoz.org/img/editors/rpfuller/viewfromtheterraces.jpg" width="150" height="230" />
+   </item>
+</category>
+
+</musicmoz>
