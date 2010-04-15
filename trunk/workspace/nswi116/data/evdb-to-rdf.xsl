@@ -11,12 +11,12 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:ex="http://example.org/stuff/1.0/">
- <xsl:apply-templates/>         
+ <xsl:apply-templates select="/search/events"/>         
 </rdf:RDF>
 </xsl:template>
 
 
-<xsl:template match="search/events/event">
+<xsl:template match="events/event">
  <xsl:variable name="event_uri" select="@id"/>
  <id id="{$event_uri}" />
 </xsl:template>	
