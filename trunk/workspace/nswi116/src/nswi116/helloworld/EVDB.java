@@ -15,6 +15,7 @@ import javax.xml.transform.stream.StreamSource;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFReader;
 
 // Congratulations! Your new application key is 9Lvz5Drd6NNB8w5c.
 // http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future
@@ -22,17 +23,31 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 public class EVDB
 {
 
-	public static void main(String[] args) throws IOException, TransformerFactoryConfigurationError, TransformerException, InterruptedException
+	public static void main(String[] args) throws IOException
 	{
-		URL url = new URL("http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future");
+		Model mmModel = ModelFactory.createDefaultModel();
+		RDFReader reader = mmModel.getReader("GRDDL");
+		reader.setProperty("grddl.xml-xform", "file:data/evdb-time.xsl");
 		
+		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future";		
+	
+		reader.read(mmModel, url);				
+		
+		mmModel.write(System.out);		
+	}
+	
+
+	
+	
+	
+	public static void main2(String[] args) throws IOException, TransformerFactoryConfigurationError, TransformerException, InterruptedException
+	{
+		URL url = new URL("http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future");		
 		final InputStream http_in = url.openStream();
 		
 		final Transformer transform = TransformerFactory.newInstance().
 			newTransformer(new StreamSource("data/evdb-time.xsl"));
-				
-		Model model = ModelFactory.createDefaultModel();
-	    	    	      
+					    	    	      
 	    PipedInputStream pipe_in = new PipedInputStream();  
 	    final PipedOutputStream pipe_out = new PipedOutputStream(pipe_in);
 
@@ -59,6 +74,7 @@ public class EVDB
 		}.start();
 		
 		
+		Model model = ModelFactory.createDefaultModel();
 		model.read(pipe_in, null);		
 		model.write(System.out);
 	}
