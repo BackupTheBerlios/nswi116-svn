@@ -18,6 +18,10 @@ import edu.mit.simile.babel.generic.RdfXmlConverter;
 
 public class RDFXML2JSON {
 
+	/**
+	info: http://simile.mit.edu/babel/
+	download: http://libstaff.mit.edu/facade/index.php/Public:PIM_Tools#Download_and_build_SIMILE_Babel
+	 */
 	public static void convert(Reader input, Writer output) throws Exception
 	{
 		RdfXmlConverter reader = new RdfXmlConverter();
