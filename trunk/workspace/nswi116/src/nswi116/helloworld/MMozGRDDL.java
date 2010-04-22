@@ -11,10 +11,10 @@ public class MMozGRDDL
 {
 
 	public static void main(String[] args) throws IOException
-	{		
+	{
 		Model mmModel = ModelFactory.createDefaultModel();
 		RDFReader reader = mmModel.getReader("GRDDL");
-		
+
 	    File cur_dir = new File(".");
 	    String prefix = "file:///" + cur_dir.getCanonicalPath() + "/data/";
 
@@ -22,9 +22,9 @@ public class MMozGRDDL
 
 //	    model.read(prefix + "Meex.n3", "", "N3");
 
-//		reader.read(mmModel, "file:///.../musicmoz.bandsandartists.xml");
-		reader.read(mmModel, prefix + "musicmoz.lists.styles.xml");
-		
+		reader.read(mmModel, prefix + "musicmoz.bandsandartists.xml");
+		//reader.read(mmModel, prefix + "musicmoz.lists.styles.xml");
+
 		mmModel.write(System.out);
 
 	}
