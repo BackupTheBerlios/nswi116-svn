@@ -1,5 +1,6 @@
 package nswi116.helloworld;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
@@ -28,8 +29,14 @@ public class EVDB
 	public static void main(String[] args) throws IOException
 	{
 		Model model = ModelFactory.createDefaultModel();
+		
+		   
+		File cur_dir = new File(".");		    
+		String prefix = "file:///" + cur_dir.getCanonicalPath() + "/data/";
 
-		eventsForPerformer("url beatles", model);
+	    model.read(prefix + "SampleInstance-MusicMoz.n3", "", "N3");
+
+		eventsForPerformer("http://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html", model);
 		
 		model.write(System.out);
 	}
@@ -37,7 +44,7 @@ public class EVDB
 	public static Model evdbEventsForPerformerLabel(Model mmModel, String label) throws UnsupportedEncodingException
 	{
 		RDFReader reader = mmModel.getReader("GRDDL");
-		reader.setProperty("grddl.xml-xform", "file:data/evdb-time.xsl");
+		reader.setProperty("grddl.xml-xform", "file:data/evdb.xsl");
 		
 		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords="+URLEncoder.encode(label, "UTF-8")+"&date=Future";		
 	
@@ -47,8 +54,14 @@ public class EVDB
 	}
 	
 	public static void eventsForPerformer(String uri, Model m) throws UnsupportedEncodingException
-	{
-		evdbEventsForPerformerLabel(m, "beatles");
+	{		
+		String label = m.getProperty(
+				m.getResource(
+			"mb:artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html"),
+				m.getProperty(
+			"http://www.w3.org/2000/01/rdf-schema#label")).getObject().toString();
+
+		evdbEventsForPerformerLabel(m, label);
 		
 	}
 

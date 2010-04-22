@@ -1,6 +1,6 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix mb: <http://exmaple.org/mb> .
+@prefix mb: <http://musicbrainz.org/> .
 @prefix mm: <http://exmaple.org/mm> .
 
 <mb:artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html> a mb:Band ;
