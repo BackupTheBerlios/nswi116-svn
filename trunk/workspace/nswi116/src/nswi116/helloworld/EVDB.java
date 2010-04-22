@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLEncoder;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -25,17 +27,30 @@ public class EVDB
 
 	public static void main(String[] args) throws IOException
 	{
-		Model mmModel = ModelFactory.createDefaultModel();
+		Model model = ModelFactory.createDefaultModel();
+
+		eventsForPerformer("url beatles", model);
+		
+		model.write(System.out);
+	}
+	
+	public static Model evdbEventsForPerformerLabel(Model mmModel, String label) throws UnsupportedEncodingException
+	{
 		RDFReader reader = mmModel.getReader("GRDDL");
 		reader.setProperty("grddl.xml-xform", "file:data/evdb-time.xsl");
 		
-		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future";		
+		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords="+URLEncoder.encode(label, "UTF-8")+"&date=Future";		
 	
 		reader.read(mmModel, url);				
 		
-		mmModel.write(System.out);		
+		return mmModel;				
 	}
 	
+	public static void eventsForPerformer(String uri, Model m) throws UnsupportedEncodingException
+	{
+		evdbEventsForPerformerLabel(m, "beatles");
+		
+	}
 
 	
 	
