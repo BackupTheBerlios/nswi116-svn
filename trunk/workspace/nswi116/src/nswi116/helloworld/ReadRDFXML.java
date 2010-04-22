@@ -30,8 +30,8 @@ public class ReadRDFXML {
 	    model.read(prefix + "MusicMoz.n3", "", "N3");
 	    model.read(prefix + "SampleInstance-MusicMoz.n3", "", "N3");
 	    model.read(prefix + "SampleInstance-MusicBrainz.n3", "", "N3");
-	    model.read(prefix + "Google.n3", "", "N3");
 	    model.read(prefix + "google_sample.n3", "", "N3");
+	    model.read(prefix + "Google.n3", "", "N3");
 	    model.read(prefix + "MeexBindings.n3", "", "N3");
 	    model.read(prefix + "MusicBrainz.n3", "", "N3");
 	    model.read(prefix + "EVDB.n3", "", "N3");

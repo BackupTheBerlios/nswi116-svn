@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix meex: <http://swa.cefriel.it/meex#> .
-@prefix gd: <http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#> .
+@prefix gd: <http://maps.google.com/> .
 
 meex:Performer	a  owl:Class ;
                 	rdfs:label  "Performer" .
