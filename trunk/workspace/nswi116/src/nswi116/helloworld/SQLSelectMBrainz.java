@@ -32,9 +32,11 @@ public class SQLSelectMBrainz {
 
 		out.println(query_str);
 		
-		String url = "jdbc:mysql://dedekj.heliohost.org/dedekj_musicbrainz";
+//		String url = "jdbc:mysql://dedekj.heliohost.org/dedekj_musicbrainz";
+		String url = "jdbc:mysql://freesql.org/nswi116";
 
-		Connection con = DriverManager.getConnection(url, "dedekj_student", "nswi116");
+//		Connection con = DriverManager.getConnection(url, "dedekj_student", "nswi116");
+		Connection con = DriverManager.getConnection(url, "nswi116", "nswi116");
 		Statement stmt = con.createStatement();
 		ResultSet result = stmt.executeQuery(query_str);
 		while (result.next())
