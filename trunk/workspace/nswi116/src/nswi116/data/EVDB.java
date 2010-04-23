@@ -1,4 +1,4 @@
-package data;
+package nswi116.data;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -6,6 +6,7 @@ import java.net.URLEncoder;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.RDFReader;
+import com.hp.hpl.jena.rdf.model.Resource;
 
 public class EVDB
 {
@@ -31,6 +32,16 @@ public class EVDB
 		reader.read(eventsModel, url);				
 		
 		return eventsModel;				
+	}
+
+	public Model getEventsForArtistLinked(Resource artist, String artistLabel) throws UnsupportedEncodingException
+	{
+		Model m = getEventsForArtist(artistLabel);
+		
+		//TODO: Link the artist information retrieved from MusicMoz and MusicBrainz 
+		//to the event information retrieved from EVDB.
+		
+		return m;
 	}
 
 }

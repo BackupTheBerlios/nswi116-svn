@@ -1,6 +1,7 @@
-package data;
+package nswi116.data;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
@@ -83,7 +84,7 @@ public class Integration
 	    	Model mbModel = musicBrainz.addArtistData(artist);
 	    	resultModel.add(mbModel);
 	    	
-	    	Model evdbModel = evdb.getEventsForArtist(artist_name.toString());
+	    	Model evdbModel = evdb.getEventsForArtistLinked(artist, artist_name.toString());
 	    	resultModel.add(evdbModel);
 	    }
 		
@@ -118,8 +119,9 @@ public class Integration
 	{
 		Integration data_integration = new Integration();
 		
-		Model integred_model =  data_integration.integrateDataForMusicStyle("Christian Rock");
+		Model integred_model =  data_integration.integrateDataForMusicStyle("British Invasion");
 		
+		integred_model.write(new FileOutputStream("result_model.xml"));		
 		integred_model.write(System.out);		
 	}
 }

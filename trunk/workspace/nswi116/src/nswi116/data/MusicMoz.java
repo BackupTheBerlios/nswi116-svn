@@ -1,4 +1,4 @@
-package data;
+package nswi116.data;
 
 import java.io.File;
 import java.io.IOException;

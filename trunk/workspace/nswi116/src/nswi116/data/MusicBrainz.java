@@ -1,4 +1,4 @@
-package data;
+package nswi116.data;
 
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
