@@ -39,8 +39,8 @@ public class Integration
 		musicMoz = new MusicMoz();
 		System.err.println("initalized - MusicMoz");
 		
-//		musicBrainz = new MusicBrainz();
-//		System.err.println("initalized - MusicBrainz");
+		musicBrainz = new MusicBrainz();
+		System.err.println("initalized - MusicBrainz");
 		
 		evdb = new EVDB();
 		System.err.println("initalized - EVDB");
@@ -79,13 +79,15 @@ public class Integration
 	    	Resource artist = sol.getResource("?performer");
 	    	Literal artist_name = sol.getLiteral("?artist_name");
 
-	    	System.err.println("looup for: " + artist_name + "\t\t" + artist);
+	    	System.err.print("looup for: " + artist_name + "\t\t" + artist);
 	    	
-//	    	Model mbModel = musicBrainz.addArtistData(artist);
-//	    	resultModel.add(mbModel);
+	    	Model mbModel = musicBrainz.addArtistData(artist);
+	    	resultModel.add(mbModel);
+	    	System.err.print("\t mb(" + mbModel.size()+")\t");	    	 
 	    	
 	    	Model evdbModel = evdb.getEventsForArtistLinked(artist, artist_name.toString());
 	    	resultModel.add(evdbModel);
+	    	System.err.println("evdb(" + evdbModel.size()+')');	    	 
 	    }
 		
 		return resultModel;

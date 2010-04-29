@@ -10,14 +10,14 @@ geopt
 	xmlns:mm="http://musicmoz.org/"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:gd="http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#"
-	xmlns:evdb="http://eventuful.com/"
+	xmlns:gd="http://maps.google.com/"
+	xmlns:evdb="http://eventful.com/"
 	version="1.0">
 
   <xsl:template match="/">
     <rdf:RDF
     	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    	xmlns:gd="http://svn.berlios.de/svnroot/repos/nswi116/trunk/workspace/nswi116/data/Google.n3#"
+    	xmlns:gd="http://maps.google.com/"
 		xmlns:evdb="http://eventuful.com/">
       <xsl:apply-templates select="search/events" />
     </rdf:RDF>
