@@ -5,6 +5,7 @@
 @prefix evdb: <http://eventuful.com/> .
 
 <evdb:events/E0-001-008121669-0@2008022719>
+	rdf:type <evdb:Event>;
 	rdfs:label "Tell Me Why: A Beatles Commentary";
 	evdb:hasWhen <evdb:events/E0-001-008121669-0@2008022719_When>;
 	evdb:hasWhere <evdb:events/E0-001-008121669-0@2008022719_Where>.

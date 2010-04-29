@@ -23,8 +23,8 @@ public class Integration
 	protected MusicMoz musicMoz = null;
 	protected MusicBrainz musicBrainz = null;
 	protected EVDB evdb = null;
-	protected String dataDirUrlPrefix = null;
-	protected Reasoner reasoner = null; 
+	protected static String dataDirUrlPrefix = null;
+	protected static Reasoner reasoner = null; 
 	protected Model mainModel = null;
 		
 	public Integration() throws IOException
@@ -39,8 +39,8 @@ public class Integration
 		musicMoz = new MusicMoz();
 		System.err.println("initalized - MusicMoz");
 		
-		musicBrainz = new MusicBrainz();
-		System.err.println("initalized - MusicBrainz");
+//		musicBrainz = new MusicBrainz();
+//		System.err.println("initalized - MusicBrainz");
 		
 		evdb = new EVDB();
 		System.err.println("initalized - EVDB");
@@ -81,8 +81,8 @@ public class Integration
 
 	    	System.err.println("looup for: " + artist_name + "\t\t" + artist);
 	    	
-	    	Model mbModel = musicBrainz.addArtistData(artist);
-	    	resultModel.add(mbModel);
+//	    	Model mbModel = musicBrainz.addArtistData(artist);
+//	    	resultModel.add(mbModel);
 	    	
 	    	Model evdbModel = evdb.getEventsForArtistLinked(artist, artist_name.toString());
 	    	resultModel.add(evdbModel);
@@ -92,13 +92,13 @@ public class Integration
 	}
 		
 
-	protected Model makeInferedModel(Model origModel)
+	protected static Model makeInferedModel(Model origModel)
 	{
 	    Model inferedModel = ModelFactory.createInfModel(reasoner, origModel);
 	    return inferedModel;
 	}
 
-	protected void readStaticOntologiesToModel(Model model)
+	protected static void readStaticOntologiesToModel(Model model)
 	{
 		model.read(dataDirUrlPrefix + "Meex.n3", "", "N3");
 	    model.read(dataDirUrlPrefix + "MusicMoz.n3", "", "N3");

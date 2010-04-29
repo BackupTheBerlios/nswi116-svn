@@ -24,11 +24,11 @@ geopt
   </xsl:template>
 
   <xsl:template match="search/events/event">
-    <rdf:Description rdf:about="evdb:events/{@id}">
+    <evdb:Event rdf:about="evdb:events/{@id}">
       <rdfs:label><xsl:value-of select="title" /></rdfs:label>
       <evdb:hasWhen rdf:resource="evdb:events/{@id}_When"/>
 	  <evdb:hasWhere rdf:resource="evdb:events/{@id}_Where"/>
-    </rdf:Description>
+    </evdb:Event>
 	<rdf:Description rdf:about="evdb:events/{@id}_When">
       <gd:endTime><xsl:value-of select="stop_time" /></gd:endTime>
       <gd:startTime><xsl:value-of select="start_time" /></gd:startTime>
