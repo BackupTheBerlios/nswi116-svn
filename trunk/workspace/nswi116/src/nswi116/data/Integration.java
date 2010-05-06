@@ -133,11 +133,53 @@ public class Integration
 		integred_model.write(new FileOutputStream("result_model.xml"));		
 		integred_model.write(System.out);
 		*/
-				
+
+		Integration data_integration = new Integration();
+		
+		data_integration.mainModel.read(
+			Integration.dataDirUrlPrefix +	
+			"../result_model.xml");
+		
+		data_integration.mainModel = Integration.makeInferedModel(data_integration.mainModel);
+		
+		
+		String sparqlQueryString =
+		      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+				+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
+				+ "PREFIX gd:   <http://maps.google.com/>\n"
+				+ "CONSTRUCT {?event rdfs:label ?event_label;\n" +
+				  "					a meex:Event.}\n"
+				// + "SELECT DISTINCT ?performer \n"
+				+ "WHERE { "
+				+ "?event rdfs:label ?event_label;\n"
+				+ "		a meex:Event.}";
+//				+ "		meex:hasWhen ?when;"
+//				+ "		meex:hasWhere ?where."
+//				+ "?when gd:startTime ?when_startTime;"
+//				+ "		gd:endTime ?when_endTime."
+//				+ "?where gd:label ?where_label;"
+//				+ "		gd:postalAddress ?where_address;"
+//				+ "		gd:hasGeoPt ?geoPt."
+//				+ "?geoPt gd:lat ?where_lat;"
+//				+ "		gd:lon ?where_lon."
+//				+ "?performer meex:performsEvent ?event;"
+//				+ "		rdfs:label ?performer_label;"
+//				+ "		meex:fromCountry ?fromCountry.}";
+		
+
+		
+	    Query query = QueryFactory.create(sparqlQueryString);
+	    QueryExecution qexec = QueryExecutionFactory.create(query, data_integration.mainModel);
+	    Model resultSet = qexec.execConstruct();
+	    
+	    String modelname="result_model2.xml";
+	    
+	    resultSet.write(new FileOutputStream(modelname));
+	    	    
 		
 		RDFXML2JSON.convert(
 			new InputStreamReader(
-					new FileInputStream("result_model.xml")),
+					new FileInputStream(modelname)),
 			new OutputStreamWriter(
 					new FileOutputStream("result_model.js")));
 		
