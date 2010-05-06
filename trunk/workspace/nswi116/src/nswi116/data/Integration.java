@@ -1,9 +1,14 @@
 package nswi116.data;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+
+import nswi116.babel.RDFXML2JSON;
 
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -117,13 +122,25 @@ public class Integration
 	}
 	
 	
-	public static void main(String[] args) throws IOException
+	public static void main(String[] args) throws Exception
 	{
+
+		/*
 		Integration data_integration = new Integration();
 		
 		Model integred_model =  data_integration.integrateDataForMusicStyle("British Invasion");
 		
 		integred_model.write(new FileOutputStream("result_model.xml"));		
-		integred_model.write(System.out);		
+		integred_model.write(System.out);
+		*/
+				
+		
+		RDFXML2JSON.convert(
+			new InputStreamReader(
+					new FileInputStream("result_model.xml")),
+			new OutputStreamWriter(
+					new FileOutputStream("result_model.js")));
+		
+		
 	}
 }
