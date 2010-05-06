@@ -24,21 +24,21 @@ geopt
   </xsl:template>
 
   <xsl:template match="search/events/event">
-    <evdb:Event rdf:about="evdb:events/{@id}">
+    <evdb:Event rdf:about="http://eventful.com/events/{@id}">
       <rdfs:label><xsl:value-of select="title" /></rdfs:label>
-      <evdb:hasWhen rdf:resource="evdb:events/{@id}_When"/>
-	  <evdb:hasWhere rdf:resource="evdb:events/{@id}_Where"/>
+      <evdb:hasWhen rdf:resource="http://eventful.com/events/{@id}_When"/>
+	  <evdb:hasWhere rdf:resource="http://eventful.com/events/{@id}_Where"/>
     </evdb:Event>
-	<rdf:Description rdf:about="evdb:events/{@id}_When">
+	<rdf:Description rdf:about="http://eventful.com/events/{@id}_When">
       <gd:endTime><xsl:value-of select="stop_time" /></gd:endTime>
       <gd:startTime><xsl:value-of select="start_time" /></gd:startTime>
     </rdf:Description>
-	<rdf:Description rdf:about="evdb:events/{@id}_Where">
+	<rdf:Description rdf:about="http://eventful.com/events/{@id}_Where">
       <gd:postalAddress><xsl:value-of select="venue_address" />, <xsl:value-of select="city_name" />, <xsl:value-of select="country_abbr" /></gd:postalAddress>
 	  <rdfs:label><xsl:value-of select="venue_name" /></rdfs:label>
-      <gd:hasGeoPt rdf:resource="evdb:events/{@id}_GeoPt"/>
+      <gd:hasGeoPt rdf:resource="http://eventful.com/events/{@id}_GeoPt"/>
     </rdf:Description>
-	<rdf:Description rdf:about="evdb:events/{@id}_GeoPt">
+	<rdf:Description rdf:about="http://eventful.com/events/{@id}_GeoPt">
 		<evdb:lat><xsl:value-of select="latitude"/></evdb:lat>
 		<evdb:lon><xsl:value-of select="longitude"/></evdb:lon>
 	</rdf:Description>

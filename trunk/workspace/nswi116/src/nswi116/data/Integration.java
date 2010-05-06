@@ -6,6 +6,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
 import java.io.UnsupportedEncodingException;
 
 import nswi116.babel.RDFXML2JSON;
@@ -95,10 +97,45 @@ public class Integration
 	    	System.err.println("evdb(" + evdbModel.size()+')');	    	 
 	    }
 		
-		return resultModel;
+	    resultModel.add(mainModel);	    
+	    return makeInferedModel(resultModel);
 	}
 		
 
+	protected Model constructModelForPresentation(Model integretedModel)
+	{
+		String sparqlQueryString =
+	      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+			+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
+			+ "PREFIX gd:   <http://maps.google.com/>\n"
+			+ "PREFIX evdb:   <http://eventful.com/>\n"
+			+ "CONSTRUCT {?event rdfs:label ?event_label;\n" +
+			  "					a meex:Event.}\n"
+			// + "SELECT DISTINCT ?performer \n"
+			+ "WHERE { "
+			+ "?event rdfs:label ?event_label;\n"
+			+ "		a meex:Event.}";
+//			+ "		meex:hasWhen ?when;"
+//			+ "		meex:hasWhere ?where."
+//			+ "?when gd:startTime ?when_startTime;"
+//			+ "		gd:endTime ?when_endTime."
+//			+ "?where gd:label ?where_label;"
+//			+ "		gd:postalAddress ?where_address;"
+//			+ "		gd:hasGeoPt ?geoPt."
+//			+ "?geoPt gd:lat ?where_lat;"
+//			+ "		gd:lon ?where_lon."
+//			+ "?performer meex:performsEvent ?event;"
+//			+ "		rdfs:label ?performer_label;"
+//			+ "		meex:fromCountry ?fromCountry.}";
+		
+	    Query query = QueryFactory.create(sparqlQueryString);
+	    QueryExecution qexec = QueryExecutionFactory.create(query, integretedModel);
+	    Model resultSet = qexec.execConstruct();
+
+		return resultSet;
+	}
+
+	
 	protected static Model makeInferedModel(Model origModel)
 	{
 	    Model inferedModel = ModelFactory.createInfModel(reasoner, origModel);
@@ -125,64 +162,46 @@ public class Integration
 	public static void main(String[] args) throws Exception
 	{
 
-		/*
 		Integration data_integration = new Integration();
-		
-		Model integred_model =  data_integration.integrateDataForMusicStyle("British Invasion");
-		
-		integred_model.write(new FileOutputStream("result_model.xml"));		
-		integred_model.write(System.out);
-		*/
 
-		Integration data_integration = new Integration();
+/***/		
+		Model integred_model =  data_integration.integrateDataForMusicStyle("British Invasion");		
+		integred_model.write(new FileOutputStream("result_model.xml"));
+/***		
+		Model integred_model =  ModelFactory.createDefaultModel();
+		integred_model.read(new FileInputStream("result_model.xml"), null);
+/***/		
 		
-		data_integration.mainModel.read(
-			Integration.dataDirUrlPrefix +	
-			"../result_model.xml");
+		Model presentation_model = data_integration.constructModelForPresentation(integred_model);
 		
-		data_integration.mainModel = Integration.makeInferedModel(data_integration.mainModel);
+	    final PipedInputStream pipe_in = new PipedInputStream();  
+	    final PipedOutputStream pipe_out = new PipedOutputStream(pipe_in);
+	    	    	    
+		new Thread()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					RDFXML2JSON.convert(
+							new InputStreamReader(pipe_in),
+							new OutputStreamWriter(
+									new FileOutputStream("result_model.js")));
+				} 
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+			
+		}.start();
 		
-		
-		String sparqlQueryString =
-		      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
-				+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
-				+ "PREFIX gd:   <http://maps.google.com/>\n"
-				+ "CONSTRUCT {?event rdfs:label ?event_label;\n" +
-				  "					a meex:Event.}\n"
-				// + "SELECT DISTINCT ?performer \n"
-				+ "WHERE { "
-				+ "?event rdfs:label ?event_label;\n"
-				+ "		a meex:Event.}";
-//				+ "		meex:hasWhen ?when;"
-//				+ "		meex:hasWhere ?where."
-//				+ "?when gd:startTime ?when_startTime;"
-//				+ "		gd:endTime ?when_endTime."
-//				+ "?where gd:label ?where_label;"
-//				+ "		gd:postalAddress ?where_address;"
-//				+ "		gd:hasGeoPt ?geoPt."
-//				+ "?geoPt gd:lat ?where_lat;"
-//				+ "		gd:lon ?where_lon."
-//				+ "?performer meex:performsEvent ?event;"
-//				+ "		rdfs:label ?performer_label;"
-//				+ "		meex:fromCountry ?fromCountry.}";
-		
+	    presentation_model.write(pipe_out);
+	    presentation_model.write(new FileOutputStream("presentation.xml"));
+	    pipe_out.close();
 
 		
-	    Query query = QueryFactory.create(sparqlQueryString);
-	    QueryExecution qexec = QueryExecutionFactory.create(query, data_integration.mainModel);
-	    Model resultSet = qexec.execConstruct();
-	    
-	    String modelname="result_model2.xml";
-	    
-	    resultSet.write(new FileOutputStream(modelname));
-	    	    
-		
-		RDFXML2JSON.convert(
-			new InputStreamReader(
-					new FileInputStream(modelname)),
-			new OutputStreamWriter(
-					new FileOutputStream("result_model.js")));
-		
-		
+				
 	}
 }
