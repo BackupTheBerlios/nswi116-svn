@@ -108,13 +108,17 @@ public class Integration
 	      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
 			+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
 			+ "PREFIX gd:   <http://maps.google.com/>\n"
-			+ "PREFIX evdb:   <http://eventful.com/>\n"
-			+ "CONSTRUCT {?event rdfs:label ?event_label;\n" +
-			  "					a meex:Event.}\n"
-			// + "SELECT DISTINCT ?performer \n"
-			+ "WHERE { "
-			+ "?event rdfs:label ?event_label;\n"
-			+ "		a meex:Event.}";
+			+ "CONSTRUCT {\n" 
+			+ "?event	rdfs:label	?event_label;\n" 
+			+ "			meex:hasPerformer	?artist;\n"
+			+ "			a	meex:Event.\n"
+			+ "?artist	rdfs:label ?artist_label;\n"
+			+ "			a	meex:Performer.}\n"
+			+ "WHERE {\n"
+			+ "?artist	meex:performsEvent	?event;\n" 
+			+ "			rdfs:label	?artist_label.\n"
+			+ "?event	rdfs:label	?event_label;\n"
+			+ "			a meex:Event.}";
 //			+ "		meex:hasWhen ?when;"
 //			+ "		meex:hasWhere ?where."
 //			+ "?when gd:startTime ?when_startTime;"
@@ -131,6 +135,24 @@ public class Integration
 	    Query query = QueryFactory.create(sparqlQueryString);
 	    QueryExecution qexec = QueryExecutionFactory.create(query, integretedModel);
 	    Model resultSet = qexec.execConstruct();
+	    
+		String realtedArtistsQueryString =
+	      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+			+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
+			+ "CONSTRUCT {\n"
+			+ "?related	rdfs:label	?rel_label;\n"
+			+ "			a	meex:Performer.\n" 
+			+ "?artist	meex:relatedPerformer	?related.}\n"
+			+ "WHERE { \n"
+			+ "?artist	meex:performsEvent	?event;\n"
+			+ "			meex:relatedPerformer	?related.\n" 
+			+ "?event	a	meex:Event.\n" 
+			+ "?related	rdfs:label	?rel_label.}";
+
+	    Query query2 = QueryFactory.create(realtedArtistsQueryString);
+	    QueryExecution qexec2 = QueryExecutionFactory.create(query2, integretedModel);
+	    qexec2.execConstruct(resultSet);
+
 
 		return resultSet;
 	}
