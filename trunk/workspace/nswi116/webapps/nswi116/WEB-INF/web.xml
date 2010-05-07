@@ -15,6 +15,10 @@
     <servlet-name>NSWI116 servlet</servlet-name>
     <servlet-class>nswi116.web.HalloWorld</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>MeexJsonData</servlet-name>
+    <servlet-class>nswi116.web.MeexJsonData</servlet-class>
+  </servlet>
 
 
 
@@ -24,6 +28,10 @@
   <servlet-mapping>
     <servlet-name>NSWI116 servlet</servlet-name>
     <url-pattern>/nswi116/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MeexJsonData</servlet-name>
+    <url-pattern>/MeexJsonData</url-pattern>
   </servlet-mapping>
 
 

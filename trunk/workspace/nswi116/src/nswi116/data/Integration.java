@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 
 import nswi116.babel.RDFXML2JSON;
 
@@ -63,7 +64,7 @@ public class Integration
 		mainModel = makeInferedModel(mainModel);		
 	}
 	
-	protected Model integrateDataForMusicStyle(String music_style) throws UnsupportedEncodingException
+	public Model integrateDataForMusicStyle(String music_style) throws UnsupportedEncodingException
 	{
 		String sparqlQueryString =
 		      "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
@@ -101,8 +102,33 @@ public class Integration
 	    return makeInferedModel(resultModel);
 	}
 		
+	public static void convertAndWriteModelToJson(Model model, final Writer output) throws IOException
+	{
+	    final PipedInputStream pipe_in = new PipedInputStream();  
+	    final PipedOutputStream pipe_out = new PipedOutputStream(pipe_in);
+	    	    	    
+		new Thread()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					RDFXML2JSON.convert(new InputStreamReader(pipe_in),	output);
+				} 
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+			
+		}.start();
+		
+	    model.write(pipe_out);
+	    pipe_out.close();
+	}
 
-	protected Model constructModelForPresentation(Model integretedModel)
+	public static Model constructModelForPresentation(Model integretedModel)
 	{
 		String sparqlQueryString =
 	      	  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
@@ -184,9 +210,9 @@ public class Integration
 	public static void main(String[] args) throws Exception
 	{
 
-		Integration data_integration = new Integration();
 
 /***/		
+		Integration data_integration = new Integration();
 		Model integred_model =  data_integration.integrateDataForMusicStyle("British Invasion");		
 		integred_model.write(new FileOutputStream("result_model.xml"));
 /***		
@@ -194,36 +220,14 @@ public class Integration
 		integred_model.read(new FileInputStream("result_model.xml"), null);
 /***/		
 		
-		Model presentation_model = data_integration.constructModelForPresentation(integred_model);
+		Model presentation_model = constructModelForPresentation(integred_model);
 		
-	    final PipedInputStream pipe_in = new PipedInputStream();  
-	    final PipedOutputStream pipe_out = new PipedOutputStream(pipe_in);
-	    	    	    
-		new Thread()
-		{
-			@Override
-			public void run()
-			{
-				try
-				{
-					RDFXML2JSON.convert(
-							new InputStreamReader(pipe_in),
-							new OutputStreamWriter(
-									new FileOutputStream("result_model.js")));
-				} 
-				catch (Exception e)
-				{
-					e.printStackTrace();
-				}
-			}
-			
-		}.start();
-		
-	    presentation_model.write(pipe_out);
-	    presentation_model.write(new FileOutputStream("presentation.xml"));
-	    pipe_out.close();
+		convertAndWriteModelToJson(presentation_model, 		
+				new OutputStreamWriter(
+						new FileOutputStream("result_model.js")));
 
 		
-				
+	    presentation_model.write(new FileOutputStream("presentation.xml"));
+						
 	}
 }
