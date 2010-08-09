@@ -4,18 +4,20 @@
   
     <script src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js"
             type="text/javascript"></script>
+            
+    <script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js?gmapkey=ABQIAAAAB3MMFzWIP7Ny34WzjW_ctxRs7InRzQ7jhOJgTn31Wgyf903hNBSWWJkcbSem9S7193z2TUeMcJwrbQ"
+           type="text/javascript"></script>
 
-    <style>
-    </style>
  </head> 
  <body>
-  Google maps API key for web site URL: http://nswi116.berlios.de/<br>
-  <i>ABQIAAAAB3MMFzWIP7Ny34WzjW_ctxRs7InRzQ7jhOJgTn31Wgyf903hNBSWWJkcbSem9S7193z2TUeMcJwrbQ</i>
- 
     <table width="100%">
         <tr valign="top">
             <td ex:role="viewPanel">
                 <div ex:role="view"></div>
+                 <div ex:role="view"
+                   ex:viewClass="Map"
+                   ex:latlng=".hasLatLng"
+                 </div>
             </td>
             <td width="25%">
                 browsing controls here...
