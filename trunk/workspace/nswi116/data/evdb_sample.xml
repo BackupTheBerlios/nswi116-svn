@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<search>
+<search xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+ grddl:transformation="file:data/evdb.xsl">
   <total_items>670</total_items>
   <page_size>20</page_size>
   <page_count>34</page_count>

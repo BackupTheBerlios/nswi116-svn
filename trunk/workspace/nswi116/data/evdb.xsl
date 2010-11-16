@@ -39,8 +39,8 @@ geopt
       <gd:hasGeoPt rdf:resource="http://eventful.com/events/{@id}_GeoPt"/>
     </rdf:Description>
 	<rdf:Description rdf:about="http://eventful.com/events/{@id}_GeoPt">
-		<evdb:lat><xsl:value-of select="latitude"/></evdb:lat>
-		<evdb:lon><xsl:value-of select="longitude"/></evdb:lon>
+		<gd:lat><xsl:value-of select="latitude"/></gd:lat>
+		<gd:lon><xsl:value-of select="longitude"/></gd:lon>
 	</rdf:Description>
 
   </xsl:template>

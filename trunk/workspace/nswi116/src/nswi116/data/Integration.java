@@ -144,7 +144,7 @@ public class Integration
 			+ "?artist	meex:performsEvent	?event;\n" 
 			+ "			rdfs:label	?artist_label.\n"
 			+ "?event	rdfs:label	?event_label;\n"
-			+ "			a meex:Event.}";
+			+ "			a meex:Event.}\n";
 //			+ "		meex:hasWhen ?when;"
 //			+ "		meex:hasWhere ?where."
 //			+ "?when gd:startTime ?when_startTime;"
@@ -178,6 +178,40 @@ public class Integration
 	    Query query2 = QueryFactory.create(realtedArtistsQueryString);
 	    QueryExecution qexec2 = QueryExecutionFactory.create(query2, integretedModel);
 	    qexec2.execConstruct(resultSet);
+	    
+		String sparqlLatLangQueryString =
+			          "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+					+ "PREFIX meex: <http://swa.cefriel.it/meex#>\n"
+					+ "PREFIX gd:   <http://maps.google.com/>\n"
+					+ "SELECT DISTINCT ?event ?lat ?lng \n"
+					+ "WHERE { ?performer meex:performsEvent	?event.\n" 
+					+ "        ?event	a	meex:Event;\n"
+					+ "              	meex:hasWhere ?where.\n"
+					+ "        ?where	gd:hasGeoPt	?geoPt.\n"
+					+ "        ?geoPt	gd:lat ?lat.\n"
+					+ "        ?geoPt	gd:lon ?lng.}";
+
+		Query query3 = QueryFactory.create(sparqlLatLangQueryString);
+	    QueryExecution qexec3 = QueryExecutionFactory.create(query3, integretedModel);
+	    ResultSet res = qexec3.execSelect();
+	    
+	    while (res.hasNext())
+	    {
+	    	QuerySolution sol = res.next();
+	    	String lat = sol.getLiteral("?lat").toString();
+	    	String lng = sol.getLiteral("?lng").toString();
+	    	Resource event = sol.getResource("?event");
+	    	
+	    	String latLng = lat +','+ lng;  
+	    	
+	    	resultSet.add(
+	    			resultSet.createLiteralStatement(
+	    					event,
+	    					resultSet.createProperty(
+	    							"http://swa.cefriel.it/meex#hasLatLng"),
+	    							latLng));
+	    }
+
 
 
 		return resultSet;

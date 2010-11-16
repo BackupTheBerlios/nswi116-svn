@@ -19,6 +19,7 @@ import javax.xml.transform.stream.StreamSource;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.RDFReader;
+import com.hp.hpl.jena.rdf.model.RDFReaderF;
 
 // Congratulations! Your new application key is 9Lvz5Drd6NNB8w5c.
 // http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords=books&location=San+Diego&date=Future
@@ -28,6 +29,16 @@ public class EVDB
 
 	public static void main(String[] args) throws IOException
 	{
+		Model mmModel = ModelFactory.createDefaultModel();
+		RDFReader reader = mmModel.getReader("GRDDL");
+//		reader.setProperty("grddl.xml-xform", "file:data/evdb.xsl");
+		
+//		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords="+URLEncoder.encode(label, "UTF-8")+"&date=Future";		
+	
+		reader.read(mmModel, "file:data/evdb_sample.xml");
+		mmModel.write(System.out);
+
+/*
 		Model model = ModelFactory.createDefaultModel();
 		
 		   
@@ -39,12 +50,13 @@ public class EVDB
 		eventsForPerformer("http://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.html", model);
 		
 		model.write(System.out);
+		*/
 	}
 	
 	public static Model evdbEventsForPerformerLabel(Model mmModel, String label) throws UnsupportedEncodingException
 	{
 		RDFReader reader = mmModel.getReader("GRDDL");
-		reader.setProperty("grddl.xml-xform", "file:data/evdb.xsl");
+//		reader.setProperty("grddl.xml-xform", "file:data/evdb.xsl");
 		
 		String url = "http://api.eventful.com/rest/events/search?app_key=9Lvz5Drd6NNB8w5c&keywords="+URLEncoder.encode(label, "UTF-8")+"&date=Future";		
 	
