@@ -1,0 +1,265 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usetheme{Darmstadt}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+%\setbeamertemplate{frametitle}{\insertpagenumber}
+\setbeamertemplate{footline}[frame number]
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, linkcolor=black}
+
+\usepackage{times}
+
+\usepackage{xltxtra}
+\setsansfont{Calibri}
+\setmonofont{Consolas}
+
+\usepackage{minted}
+
+
+\title{MI-SWE\\Semantic APIs}
+
+\author{Jan Dědek}
+\institute{FIT-ČVUT}
+\date{2011}
+
+\begin{document}
+\setbeamercolor{block title}{bg=OliveGreen}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+\section{Introduction} 
+
+\begin{frame}{Semantic APIs}
+\begin{block}{According to Programming Language}
+\medskip
+\scriptsize\url{http://www.w3.org/2001/sw/wiki/Category:Programming_Language}
+\medskip
+\end{block}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{columns}
+\column{.5\textwidth}
+
+\begin{itemize}
+	\item Java
+		\begin{itemize}
+			\item 	Jena
+			\item openRDF (Sesame)
+			\item OWL API
+			\item Java RDF Binding (JRDF)
+		\end{itemize}
+	\item JavaScript
+		\begin{itemize}
+			\item RDFParser 
+			\item Jibbering
+			\item Hercules
+			\item SPARQL JavaScript Library  
+		\end{itemize}
+	\item .NET
+		\begin{itemize}
+			\item SemWeb
+			\item dotNetRDF
+			\item OwlDotNetApi
+			\item ROWLEX
+		\end{itemize}
+	\item C++
+		\begin{itemize}
+			\item Soprano  Qt/C++ (QRDF)
+		\end{itemize}
+\end{itemize}
+
+\column{.5\textwidth}
+
+\begin{itemize}
+	\item PHP
+		\begin{itemize}
+			\item ARC2
+			\item RDF API for PHP (RAP)
+			\item EasyRdf
+		\end{itemize}
+	\item Perl
+		\begin{itemize}
+			\item CARA
+			\item RDF Helper
+		\end{itemize}
+	\item Pyton
+		\begin{itemize}
+			\item 4Suite 4RDF
+			\item pyrple 
+		\end{itemize}
+	\item Ruby
+		\begin{itemize}
+			\item RDF.rb: RDF for Ruby  
+			\item ActiveRDF 
+		\end{itemize}
+	\item Flex
+		\begin{itemize}
+			\item TopBraid Live Flex API 
+		\end{itemize}
+	\item ActionScript
+		\begin{itemize}
+			\item SemanticFlash 
+		\end{itemize}
+\end{itemize}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\begin{itemize}
+	\item Java                              
+		\begin{itemize}                       
+			\item 	Jena 										    \hfill {\scriptsize\url{http://jena.sourceforge.net/}}
+			\item openRDF (Sesame) 					    \hfill {\scriptsize\url{http://www.openrdf.org/}}
+			\item OWL API										    \hfill {\scriptsize\url{http://owlapi.sourceforge.net/}}
+			\item Java RDF Binding (JRDF)		    \hfill {\scriptsize\url{http://jrdf.sourceforge.net/}}
+		\end{itemize}                         
+	\item JavaScript                        
+		\begin{itemize}                       
+			\item RDFParser                     \hfill {\scriptsize\url{http://dig.csail.mit.edu/breadcrumbs/blog/14}}
+			\item Jibbering                     \hfill {\scriptsize\url{http://www.jibbering.com/rdf-parser/}}
+			\item Hercules                      \hfill {\scriptsize\url{http://hercules.arielworks.net/}}
+			\item SPARQL JavaScript Library     \hfill {\scriptsize\url{http://www.thefigtrees.net/lee/blog/2006/04/sparql_calendar_demo_a_sparql.html}}
+		\end{itemize}                         
+	\item .NET                              
+		\begin{itemize}                       
+			\item SemWeb                        \hfill {\scriptsize\url{http://razor.occams.info/code/semweb/}}
+			\item dotNetRDF                     \hfill {\scriptsize\url{http://www.dotnetrdf.org/}}
+			\item OwlDotNetApi                  \hfill {\scriptsize\url{http://users.skynet.be/bpellens/OwlDotNetApi/}}
+			\item ROWLEX                        \hfill {\scriptsize\url{http://rowlex.nc3a.nato.int/}}
+		\end{itemize}                         
+	\item C++                               
+		\begin{itemize}                       
+			\item Soprano  Qt/C++ (QRDF)        \hfill {\scriptsize\url{http://soprano.sourceforge.net/}}
+		\end{itemize}
+\end{itemize}
+%}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\begin{itemize}
+	\item PHP
+		\begin{itemize}
+			\item ARC2                   \hfill {\scriptsize\url{http://arc.semsol.org/home}}
+			\item RDF API for PHP (RAP)  \\\hfill {\scriptsize\url{http://www4.wiwiss.fu-berlin.de/bizer/rdfapi/}}
+			\item EasyRdf                \hfill {\scriptsize\url{http://www.aelius.com/njh/easyrdf/}}
+		\end{itemize}                  
+	\item Perl                       
+		\begin{itemize}                
+			\item CARA                   \hfill {\scriptsize\url{http://cara.sourceforge.net/}}
+			\item RDF Helper             \hfill {\scriptsize\url{http://search.cpan.org/dist/RDF-Helper/}}
+		\end{itemize}
+	\item Pyton
+		\begin{itemize}
+			\item 4Suite 4RDF
+			\item pyrple 
+		\end{itemize}
+	\item Ruby
+		\begin{itemize}
+			\item RDF.rb: RDF for Ruby  
+			\item ActiveRDF 
+		\end{itemize}
+	\item Flex
+		\begin{itemize}
+			\item TopBraid Live Flex API 
+		\end{itemize}
+	\item ActionScript
+		\begin{itemize}
+			\item SemanticFlash 
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SIMILE Widgets}
+\begin{itemize}
+	\item \url{http://www.simile-widgets.org/}
+	\item Exhibit
+		\begin{itemize}
+			\item Faceted browser, written in JavaScript
+			\item \url{http://www.simile-widgets.org/exhibit/} 
+		\end{itemize}
+	\item Babel
+		\begin{itemize}
+			\item Converter between various formats (RDF -> JSON)
+			\item \url{http://simile.mit.edu/wiki/Babel} 
+			\item \url{http://service.simile-widgets.org/babel/} 
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Meex\\RSWA 2008 - Realizing a Semantic Web Application}
+
+\begin{itemize}
+	\item \url{http://swa.cefriel.it/Teaching/RSWA2008}
+	\item Music Event Explorer
+	\item Used technologies
+		\begin{itemize}
+			\item Jena (GRDDL, SPARQL, OWL reasoner)
+			\item D2RQ + Joseki
+			\item Exhibit
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Code Snippets}
+
+\newcommand{\java}[1]{
+\begin{frame}{#1}
+\inputminted[linenos, fontsize=\tiny, frame=lines, tabsize=4]{java}{src/mi_swe/#1.java}
+\end{frame}
+}
+ 
+\subsection{Jena}
+\frame{\tableofcontents[currentsubsection]}
+ 
+\java{Jena/ReadWrite}
+\java{Jena/Reasoning}
+\java{Jena/SPARQL/Construct}
+\java{Jena/SPARQL/Select}
+
+
+\subsection{OWL API} 
+\frame{\tableofcontents[currentsubsection]}
+
+\subsection{RAP} 
+\frame{\tableofcontents[currentsubsection]}
+
+\begin{frame}[fragile]{Number two}
+\begin{minted}[linenos,  fontsize=\tiny,
+               frame=lines]{prolog}
+%[Rule 1] [Pos cover = 14 Neg cover = 0]
+damage_root(A) :- lex_rf(B,A), has_sempos(B,'n.quant.def'), tDependency(C,B),
+   tDependency(C,D), has_t_lemma(D,'investigator').
+
+%[Rule 2] [Pos cover = 13 Neg cover = 0]
+damage_root(A) :- lex_rf(B,A), has_functor(B,'TOWH'), tDependency(C,B),
+   tDependency(C,D), has_t_lemma(D,'damage').
+
+
+%[Rule 1] [Pos cover = 7 Neg cover = 0]
+injuries(A) :- lex_rf(B,A), has_functor(B,'PAT'), has_gender(B,anim),
+   tDependency(B,C), has_t_lemma(C,'injured').
+
+%[Rule 8] [Pos cover = 6 Neg cover = 0]
+injuries(A) :- lex_rf(B,A), has_gender(B,anim), tDependency(C,B),
+   has_t_lemma(C,'injure'), has_negation(C,neg0).
+\end{minted}
+\end{frame}
+
+
+
+
+\end{document}

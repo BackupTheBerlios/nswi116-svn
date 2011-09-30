@@ -1,0 +1,21 @@
+@prefix   rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix   rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix   owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix   evdb:    <http://eventful.com/> .
+@prefix   gd:      <http://maps.google.com/> .
+@prefix   eg:      <http://example.eg/> .
+@prefix 	mi-swe:  <http://www.fit.cvut.cz/subjects/mi-swe#> .
+@prefix 	xsd:			<http://www.w3.org/2001/XMLSchema#> . 
+
+
+#http://hydrogen.informatik.tu-cottbus.de/wiki/index.php/JenaRules
+
+[rule1: (?a eg:p ?b) (?b eg:p ?c) -> (?a eg:p ?c)]
+
+#[pok: (?s rdf:type mi-swe:Student) -> (?s rdf:type mi-swe:Senior)]
+
+[senior: (?s rdf:type mi-swe:Student) (?s mi-swe:hasStudyYear ?y) (?y > "2"^^xsd:integer) -> (?s rdf:type mi-swe:Senior)]
+
+#[MSRoom: Room(?r) , hasName(?r, ?n) , startsWith(?n, "S") -> RoomMalaStrana(?r)]
+
+#[CZK2EUR Person(?p), hasSalaryInCZK(?p, ?czk), multiply(?eur, 24.7, ?czk) -> hasSalaryInEUR(?p, ?eur)]
