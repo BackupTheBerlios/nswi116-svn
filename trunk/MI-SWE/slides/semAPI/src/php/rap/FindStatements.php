@@ -1,8 +1,15 @@
 <?php
-  define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
-  include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");  
+  define("RDFAPI_INCLUDE_DIR", "../rdfapi-php/api_noSVN/");
+  include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+  
+  require_once RDFAPI_INCLUDE_DIR . 'model/MemModel.php';
+  require_once RDFAPI_INCLUDE_DIR . 'infModel/InfModel.php';
+  require_once RDFAPI_INCLUDE_DIR . 'infModel/InfRule.php';
+  require_once RDFAPI_INCLUDE_DIR . 'infModel/InfStatement.php';
+  
+
   $infModel= ModelFactory::getInfModelF('http://InfModelF.org');
-  $infModel->load("../../resources/hello.nt", "nt");
+  $infModel->load("../../resources/hello.rdf", "n3");
   
   //create parameters for find (swe:Human and rdf:type)
   $swe_human = new Resource("http://www.fit.cvut.cz/subjects/mi-swe#Human");
@@ -16,7 +23,7 @@
   while ($it->hasNext()) {
         $statement = $it->next();
         //print subject URI
-        echo $statement->getLabelSubject() ."\n";
+        echo $statement->getLabelSubject() ."\n<br>\n";
   }   
 ?>
 
