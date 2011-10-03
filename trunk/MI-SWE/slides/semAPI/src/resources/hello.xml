@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swe="http://www.fit.cvut.cz/subjects/mi-swe#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:springer="http://springer.com/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:ex="http://www.example.org/"
+    xmlns:exterms="http://www.example.org/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#MirekDusin">
+    <swe:hasStudyYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</swe:hasStudyYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#attends">
+    <rdfs:domain rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#hasParticipant">
+    <owl:inverseOf rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#attends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#Person">
+    <rdfs:subClassOf rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#Human"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#Rychlonozka">
+    <swe:hasStudyYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swe:hasStudyYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#hasStudent">
+    <rdfs:range rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#Student"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#hasParticipant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fit.cvut.cz/subjects/mi-swe#Course">
+    <swe:firstLectureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-19T12:45:00+01:00</swe:firstLectureDate>
+    <swe:numberOfLectures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</swe:numberOfLectures>
+    <swe:hasStudent rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#MirekDusin"/>
+    <swe:hasStudent rdf:resource="http://www.fit.cvut.cz/subjects/mi-swe#Rychlonozka"/>
+    <rdfs:label xml:lang="en">Semantic Web</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

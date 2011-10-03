@@ -1,18 +1,27 @@
-@prefix 	rdf: 	 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix 	rdfs: 	 	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix 	dc: 	 	<http://purl.org/dc/elements/1.1/> .
-@prefix		springer: 	<http://springer.com/> .
-@prefix 	xsd:			<http://www.w3.org/2001/XMLSchema#> . 
-@prefix 	ex:			<http://www.example.org/> . 
-@prefix 	exterms: 	<http://www.example.org/terms/> . 
-@prefix 	mi-swe:		<http://www.fit.cvut.cz/subjects/mi-swe#> .
+@prefix 	rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix 	rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix 	owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix 	dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix 	springer: <http://springer.com/> .
+@prefix 	xsd:      <http://www.w3.org/2001/XMLSchema#> . 
+@prefix 	ex:       <http://www.example.org/> . 
+@prefix 	exterms:  <http://www.example.org/terms/> . 
+@prefix 	swe:      <http://www.fit.cvut.cz/subjects/mi-swe#> .
 
-mi-swe:Course	rdfs:label	"Semantic Web"@en ;
-  mi-swe:hasStudent mi-swe:Rychlonozka ;
-  mi-swe:hasStudent mi-swe:MirekDusin .
+swe:Course	rdfs:label	"Semantic Web"@en ;
+  swe:hasStudent swe:Rychlonozka ;
+  swe:hasStudent swe:MirekDusin ;
+
+  swe:numberOfLectures    "13"^^xsd:integer ;
+  swe:firstLectureDate    "2011-09-19T12:45:00+01:00"^^xsd:dateTime .
+
+swe:hasStudent      rdfs:subPropertyOf  swe:hasParticipant .
+swe:hasParticipant  owl:inverseOf       swe:attends .
+swe:hasStudent      rdfs:range          swe:Student .
+swe:attends         rdfs:domain         swe:Person .
+swe:Person          rdfs:subClassOf     swe:Human .
   
-mi-swe:Rychlonozka a mi-swe:Student ;  
-  mi-swe:hasStudyYear "1"^^xsd:integer.
-mi-swe:MirekDusin  a mi-swe:Student ; 
-  mi-swe:hasStudyYear "3"^^xsd:integer.
+swe:Rychlonozka swe:hasStudyYear "1"^^xsd:integer .
+
+swe:MirekDusin  swe:hasStudyYear "3"^^xsd:integer .
 

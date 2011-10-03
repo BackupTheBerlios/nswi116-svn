@@ -1,0 +1,30 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix swe:  <http://www.fit.cvut.cz/subjects/mi-swe#> .
+#http://hydrogen.informatik.tu-cottbus.de/wiki/index.php/JenaRules
+#http://jena.sourceforge.net/inference/#RULEbuiltins
+[senior: 
+    (?s rdf:type swe:Student),
+    (?s swe:hasStudyYear ?y), 
+    greaterThan(?y, 2) 
+    ->
+    (?s rdf:type swe:Senior) 
+]
+[first_lecture: 
+    (?course swe:firstLectureDate ?date),
+    (?course swe:numberOfLectures ?number)
+    ->
+    (?course  swe:createLecures createLecures(?date, ?number, 1))
+]
+[createLecures:
+    (?course  swe:createLecures createLecures(?date, ?numberTotal, ?numberCurrent)),    
+    ge(?numberTotal, ?numberCurrent), makeTemp(?lecture), 
+    addOne(?numberCurrent, ?numberNew), 
+    addDaysToDateTime(?dateNew, ?date, 7)
+    ->          
+    (?course swe:hasLecture ?lecture),
+    (?lecture swe:hasDate ?date),  
+    (?lecture swe:hasNumber ?numberCurrent),
+    (?course  swe:createLecures createLecures(?dateNew, ?numberTotal, ?numberNew))
+]

@@ -1,0 +1,12 @@
+<http://www.fit.cvut.cz/subjects/mi-swe#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.fit.cvut.cz/subjects/mi-swe#attends> .
+<http://www.fit.cvut.cz/subjects/mi-swe#MirekDusin> <http://www.fit.cvut.cz/subjects/mi-swe#hasStudyYear> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.fit.cvut.cz/subjects/mi-swe#attends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.fit.cvut.cz/subjects/mi-swe#Person> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.fit.cvut.cz/subjects/mi-swe#Human> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Course> <http://www.fit.cvut.cz/subjects/mi-swe#firstLectureDate> "2011-09-19T12:45:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Course> <http://www.fit.cvut.cz/subjects/mi-swe#numberOfLectures> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Course> <http://www.fit.cvut.cz/subjects/mi-swe#hasStudent> <http://www.fit.cvut.cz/subjects/mi-swe#MirekDusin> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Course> <http://www.fit.cvut.cz/subjects/mi-swe#hasStudent> <http://www.fit.cvut.cz/subjects/mi-swe#Rychlonozka> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Web"@en .
+<http://www.fit.cvut.cz/subjects/mi-swe#hasStudent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.fit.cvut.cz/subjects/mi-swe#Student> .
+<http://www.fit.cvut.cz/subjects/mi-swe#hasStudent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.fit.cvut.cz/subjects/mi-swe#hasParticipant> .
+<http://www.fit.cvut.cz/subjects/mi-swe#Rychlonozka> <http://www.fit.cvut.cz/subjects/mi-swe#hasStudyYear> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .

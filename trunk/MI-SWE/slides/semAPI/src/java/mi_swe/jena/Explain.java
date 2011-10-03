@@ -1,55 +1,31 @@
 package mi_swe.jena;
 
-import com.hp.hpl.jena.rdf.model.InfModel;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.reasoner.Reasoner;
-import com.hp.hpl.jena.reasoner.rulesys.GenericRuleReasonerFactory;
-import com.hp.hpl.jena.vocabulary.ReasonerVocabulary;
+import java.io.PrintWriter;
+import java.util.Iterator;
+import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.reasoner.*;
 
 public class Explain {
 	public static void main(String[] args) {
-		//http://jena.sourceforge.net/inference/
-		//http://hydrogen.informatik.tu-cottbus.de/wiki/index.php/JenaRules
-	    String NS = "http://example.eg/";
 		Model helloModel = ReadWrite.readHelloRdfFile();
-	    
-		// create a resource (empty resource)
-		Resource configuration = helloModel.createResource();
-
-		// set engine mode
-		configuration.addProperty(ReasonerVocabulary.PROPruleMode, "hybrid");
-
-		// set the rules file
-		configuration.addProperty(ReasonerVocabulary.PROPruleSet, "data/rules.rules");
-
-		// Create an instance of such a reasoner
-		Reasoner reasoner = GenericRuleReasonerFactory.theInstance().create(configuration);
-
-//	    reasoner.setDerivationLogging(true);
-//	    helloModel.read("file:data/rules_data.n3", "", "N3");
-
-		InfModel inf = ModelFactory.createInfModel(reasoner, helloModel );
-		
-		inf.write(System.out, "N3");
-		System.out.println("---------------------------");
-		
-/*
-		PrintWriter out = new PrintWriter(System.out);
-	    Resource A = inf.createResource(NS + "A");
-		Property p = inf.createProperty(NS, "p");
-		RDFNode D = inf.createResource(NS + "D");
-		for (StmtIterator i = inf.listStatements(A, p, D); i.hasNext(); ) {
-	        Statement s = i.nextStatement(); 
-	        System.out.println("Statement is " + s);
-	        for (Iterator<Derivation> id = inf.getDerivation(s); id.hasNext(); ) {
-	            Derivation deriv = id.next();
-	            deriv.printTrace(out, true);
-	        }
-	    }
-	    out.flush();
-*/
+		Reasoner reasoner = ReasonerRegistry.getOWLMicroReasoner();
+	    // Turn on derivation logging - slows down the performance!!!
+		reasoner.setDerivationLogging(true);
+		// Attach the model to the reasoner
+		InfModel infModel = ModelFactory.createInfModel(reasoner, helloModel);
+		// Create data for a query - predicate: rdf:type, object: swe:Human
+		Property rdfType = infModel.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
+		RDFNode sweHuman = infModel.createResource("http://www.fit.cvut.cz/subjects/mi-swe#Human");
+		PrintWriter out = new PrintWriter(System.out); // Necessary of printTrace, see bellow
+		// Select matching statements (subject arbitrary) and iterate
+		for (Statement s : infModel.listStatements(null, rdfType, sweHuman).toList()) {
+		    System.out.println("Statement is " + s);
+		    for (Iterator<Derivation> id = infModel.getDerivation(s); id.hasNext(); ) {
+		        Derivation deriv = id.next();
+		        // Print a deep traceback of this derivation back to axioms and source assertions.
+		        deriv.printTrace(out, true); //print bindings = true
+		    }
+		    out.flush();
+		}
 	}
-
 }

@@ -15,17 +15,17 @@ public class Select {
 		QueryExecution qexec = Construct.prepareHelloQueryExecution(queryString);		
 		ResultSet resultSet = qexec.execSelect(); //select query !!!
 		//iterate over the results
-	    while (resultSet.hasNext())  {
-	    	QuerySolution querySolution = resultSet.next();
-	    	//obtain a resource form the variable name
-	    	Resource resource = querySolution.getResource("?resource");
-	    	//obtain a literal form the variable name
-	    	Literal label = querySolution.getLiteral("?label");
-	    	//print resource URI
-	    	System.out.println(resource.getURI());
-	    	//obtain string value and language code of the literal and print 
-	    	System.out.println(label.getString());
-	    	System.out.println(label.getLanguage());
-	    }
+		while (resultSet.hasNext())  {
+			QuerySolution querySolution = resultSet.next();
+			//obtain a resource form the variable name
+			Resource resource = querySolution.getResource("?resource");
+			//obtain a literal form the variable name
+			Literal label = querySolution.getLiteral("?label");
+			//print resource URI
+			System.out.println(resource.getURI());
+			//obtain string value and language code of the literal and print 
+			System.out.println(label.getString());
+			System.out.println(label.getLanguage());
+		}
 	}
 }

@@ -1,0 +1,14 @@
+Statement is [swe#MirekDusin, rdf:type, swe#Human]
+Rule rdfs9-alt concluded (swe#MirekDusin rdf:type swe#Human) <-
+    bound()
+    Fact (swe#Person rdfs:subClassOf swe#Human)
+    Rule [ (?x swe#hasParticipant ?y) -> (?y rdf:type swe#Person) ] concluded (swe#MirekDusin rdf:type swe#Person) <-
+        Rule [ (?a swe#hasStudent ?b) -> (?a swe#hasParticipant ?b) ] concluded (swe#Course swe#hasParticipant swe#MirekDusin) <-
+            Fact (swe#Course swe#hasStudent swe#MirekDusin)
+Statement is [swe#Rychlonozka, rdf:type, swe#Human]
+Rule rdfs9-alt concluded (swe#Rychlonozka rdf:type swe#Human) <-
+    bound()
+    Fact (swe#Person rdfs:subClassOf swe#Human)
+    Rule [ (?x swe#hasParticipant ?y) -> (?y rdf:type swe#Person) ] concluded (swe#Rychlonozka rdf:type swe#Person) <-
+        Rule [ (?a swe#hasStudent ?b) -> (?a swe#hasParticipant ?b) ] concluded (swe#Course swe#hasParticipant swe#Rychlonozka) <-
+            Fact (swe#Course swe#hasStudent swe#Rychlonozka)

@@ -4,7 +4,8 @@
 \setbeamertemplate{headline}{}
 %\setbeamertemplate{frametitle}{\insertpagenumber}
 \setbeamertemplate{footline}[frame number]
-
+\setbeamersize{text margin left=7mm}
+\setbeamersize{text margin right=7mm}
 
 \usepackage{hyperref}
 \hypersetup{colorlinks, linkcolor=black}
@@ -216,26 +217,70 @@
 
 \section{Code Snippets}
 
-\newcommand{\java}[1]{
-\begin{frame}{#1}
-\inputminted[linenos, fontsize=\tiny, frame=lines, tabsize=4]{java}{src/mi_swe/#1.java}
+\begin{frame}{Source Codes}
+\begin{block}{Online Available}
+\medskip
+\scriptsize\url{http://svn.berlios.de/svnroot/repos/nswi116/trunk/MI-SWE/slides/semAPI/src/}
+\medskip
+\end{block}	
+\end{frame}
+
+\newcommand{\sourcesFontSize}{\tiny}
+\newcommand{\source}[3]{
+\begin{frame}{#3.#1}
+\vspace{-5mm}
+\begin{center}
+\inputminted[fontsize=\sourcesFontSize, frame=lines, tabsize=3]{#1}{src/#1/#2/#3.#1}
+\end{center}
 \end{frame}
 }
+
+\newcommand{\java}[1]{\source{java}{mi_swe}{#1}}
+
+\newcommand{\resource}[2]{
+\begin{frame}{Resources/#2}
+\vspace{-5mm}
+\inputminted[fontsize=\sourcesFontSize, frame=lines, tabsize=3]{#1}{src/resources/#2}
+\end{frame}
+}
+
  
 \subsection{Jena}
 \frame{\tableofcontents[currentsubsection]}
  
+\resource{turtle}{Hello.rdf}
 \java{Jena/ReadWrite}
 \java{Jena/Reasoning}
+\java{Jena/Explain}
 \java{Jena/SPARQL/Construct}
 \java{Jena/SPARQL/Select}
 
+\resource{jena}{Hello-rules.jena}
+\java{Jena/Rules}
+\java{Jena/Builtin/AddDaysToDateTime}
+
+\subsection{OpenRDF} 
+\frame{\tableofcontents[currentsubsection]}
+\java{OpenRDF/ReadRdfFile}
+\java{OpenRDF/WriteRdfFile}
+\java{OpenRDF/InsertIntoRepository}
+
+\subsection{SIMILE Widgets: Babel and Exhibit} 
+\frame{\tableofcontents[currentsubsection]}
+
+\java{Babel/ConvertToExhibitJson}
+\resource{js}{hello.js}
+\source{html}{}{Exhibit/Hello}
 
 \subsection{OWL API} 
 \frame{\tableofcontents[currentsubsection]}
 
 \subsection{RAP} 
 \frame{\tableofcontents[currentsubsection]}
+\source{php}{}{RAP/ReadWrite}
+\source{php}{}{RAP/Inference}
+\source{php}{}{RAP/FindStatements}
+
 
 \begin{frame}[fragile]{Number two}
 \begin{minted}[linenos,  fontsize=\tiny,
